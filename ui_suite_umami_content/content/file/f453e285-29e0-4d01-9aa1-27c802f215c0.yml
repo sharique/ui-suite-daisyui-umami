@@ -1,0 +1,21 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f453e285-29e0-4d01-9aa1-27c802f215c0
+  default_langcode: en
+default:
+  filename:
+    -
+      value: mushrooms-umami.jpg
+  uri:
+    -
+      value: 'public://mushrooms-umami.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 92740
+  status:
+    -
+      value: true

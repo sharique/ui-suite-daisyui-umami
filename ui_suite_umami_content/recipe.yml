@@ -1,0 +1,5 @@
+name: 'UI Suite Umami: content'
+description: 'Umami demo content: terms, media, recipes, articles, pages, custom blocks and menu links.'
+type: 'Content'
+recipes:
+  - ui_suite_umami_content_model

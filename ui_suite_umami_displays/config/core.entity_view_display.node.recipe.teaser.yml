@@ -1,0 +1,156 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recipe.field_cooking_time
+    - field.field.node.recipe.field_difficulty
+    - field.field.node.recipe.field_ingredients
+    - field.field.node.recipe.field_media_image
+    - field.field.node.recipe.field_number_of_servings
+    - field.field.node.recipe.field_preparation_time
+    - field.field.node.recipe.field_recipe_category
+    - field.field.node.recipe.field_recipe_instruction
+    - field.field.node.recipe.field_summary
+    - field.field.node.recipe.field_tags
+    - node.type.recipe
+  module:
+    - display_builder
+    - user
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        node_id: 289e70fd3cbd5712
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_daisyui:card'
+            slots:
+              title:
+                sources:
+                  -
+                    node_id: 455605dd5cbaff2c
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:recipe:title'
+                      'field:node:recipe:title':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:recipe:title'
+                              source:
+                                type: string
+                                settings:
+                                  link_to_entity: false
+                                  link_rel: canonical
+                                third_party_settings: {  }
+              text:
+                sources:
+                  -
+                    node_id: 9e47e54002bb9a75
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:recipe:field_summary'
+                      'field:node:recipe:field_summary':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:recipe:field_summary'
+                              source:
+                                type: text_default
+                                settings: {  }
+                                third_party_settings: {  }
+                  -
+                    node_id: f6bcfe420995673a
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_daisyui:badge'
+                        slots:
+                          label:
+                            sources:
+                              -
+                                node_id: af84b07285ae97f4
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:recipe:field_cooking_time'
+                                  'field:node:recipe:field_cooking_time':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:recipe:field_cooking_time'
+                                          source:
+                                            type: number_integer
+                                            settings: {  }
+                                            third_party_settings: {  }
+                  -
+                    node_id: c48909bb89eaf451
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_daisyui:badge'
+                        slots:
+                          label:
+                            sources:
+                              -
+                                node_id: c9bc4bb2875bbecc
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:recipe:field_tags'
+                                  'field:node:recipe:field_tags':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:recipe:field_tags'
+                                          source:
+                                            type: entity_reference_label
+                                            settings: {  }
+                                            third_party_settings: {  }
+              image:
+                sources:
+                  -
+                    node_id: 9462787e99f645b2
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:recipe:field_media_image'
+                      'field:node:recipe:field_media_image':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:recipe:field_media_image'
+                              source:
+                                type: entity_reference_label
+                                settings: {  }
+                                third_party_settings: {  }
+        third_party_settings: {  }
+      -
+        node_id: 676f261176c92763
+        source_id: extra_field
+        source:
+          field: links
+        third_party_settings: {  }
+id: node.recipe.teaser
+targetEntityType: node
+bundle: recipe
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  content_moderation_control: true
+  field_cooking_time: true
+  field_difficulty: true
+  field_ingredients: true
+  field_media_image: true
+  field_number_of_servings: true
+  field_preparation_time: true
+  field_recipe_category: true
+  field_recipe_instruction: true
+  field_summary: true
+  field_tags: true
+  langcode: true

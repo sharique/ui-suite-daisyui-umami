@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.scale_crop_7_3_large
+    - image.style.scale_crop_7_3_medium
+    - image.style.scale_crop_7_3_tiny
+    - image.style.scale_crop_7_3_wide
+  theme:
+    - ui_suite_daisyui
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_crop_7_3_wide
+    breakpoint_id: ui_suite_daisyui.xl-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_crop_7_3_large
+    breakpoint_id: ui_suite_daisyui.lg-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_crop_7_3_medium
+    breakpoint_id: ui_suite_daisyui.sm-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_crop_7_3_tiny
+    breakpoint_id: ui_suite_daisyui.xs-max
+    multiplier: 1x
+breakpoint_group: ui_suite_daisyui
+fallback_image_style: scale_crop_7_3_medium

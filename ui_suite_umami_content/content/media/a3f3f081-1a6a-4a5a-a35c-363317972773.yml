@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: a3f3f081-1a6a-4a5a-a35c-363317972773
+  bundle: image
+  default_langcode: en
+  depends:
+    27b62931-e62e-4791-916d-ea7926fb7abd: file
+    62aa7ba0-874a-4545-b015-232a82ff90e2: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Watercress soup'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Watercress soup with a sprig of coriander as garnish in a white bowl with green trim'
+      title: ''
+      width: 768
+      height: 512
+      entity: 27b62931-e62e-4791-916d-ea7926fb7abd

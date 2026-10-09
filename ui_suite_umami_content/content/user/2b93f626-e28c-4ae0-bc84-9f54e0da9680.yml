@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 2b93f626-e28c-4ae0-bc84-9f54e0da9680
+  default_langcode: en
+default:
+  name:
+    -
+      value: 'Megan Collins Quinlan'
+  timezone:
+    -
+      value: Europe/Berlin
+  status:
+    -
+      value: true
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  roles:
+    -
+      target_id: author

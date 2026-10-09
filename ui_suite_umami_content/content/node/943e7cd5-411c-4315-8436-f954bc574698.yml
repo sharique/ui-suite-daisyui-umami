@@ -1,0 +1,91 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 943e7cd5-411c-4315-8436-f954bc574698
+  bundle: recipe
+  default_langcode: en
+  depends:
+    46c51837-e840-4ae0-b03d-c36a0cb04412: user
+    d8400854-15ea-43e5-aba8-c12c25231580: media
+    309a9864-fdc7-4f1a-a3b4-a74ebd2829ac: taxonomy_term
+    bbfac831-3c36-4f41-a9e2-f491f8e6ebd6: taxonomy_term
+    1cda4745-41d0-427c-9619-cbe71d4696b2: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  title:
+    -
+      value: 'Crema catalana'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /recipes/crema-catalana
+      langcode: en
+  field_cooking_time:
+    -
+      value: 20
+  field_difficulty:
+    -
+      value: medium
+  field_ingredients:
+    -
+      value: '1l milk'
+    -
+      value: ' 200g sugar'
+    -
+      value: ' 6 egg yolks'
+    -
+      value: ' 30g cornstarch'
+    -
+      value: ' 1 cinnamon stick'
+    -
+      value: ' 1 piece lemon peel'
+  field_media_image:
+    -
+      entity: d8400854-15ea-43e5-aba8-c12c25231580
+  field_number_of_servings:
+    -
+      value: 8
+  field_preparation_time:
+    -
+      value: 10
+  field_recipe_category:
+    -
+      entity: 309a9864-fdc7-4f1a-a3b4-a74ebd2829ac
+  field_recipe_instruction:
+    -
+      value: |
+        <ol>
+          <li>Mix the egg yolks, sugar, and cornstarch with 1/3 of the milk.</li>
+          <li>In a saucepan, boil 2/3 of the milk with the lemon peel and cinnamon.</li>
+          <li>After 3 minutes, remove from the heat and take out the lemon and cinnamon.</li>
+          <li>Slowly add the egg mixture to the hot milk through a strainer to ensure there are no lumps.</li>
+          <li>Return it to the heat until it boils, stirring constantly.</li>
+          <li>Once the mixture has begun to thicken, remove from the heat and put it into individual bowls to cool.</li>
+          <li>For an authentic finish, sprinkle with sugar and brown with a blowtorch or under a preheated broiler to caramelize.</li>
+        </ol>
+      format: basic_html
+  field_summary:
+    -
+      value: 'Enjoy this sweet recipe for one of the oldest desserts in Europe. It requires very few ingredients!'
+      format: basic_html
+  field_tags:
+    -
+      entity: bbfac831-3c36-4f41-a9e2-f491f8e6ebd6
+    -
+      entity: 1cda4745-41d0-427c-9619-cbe71d4696b2

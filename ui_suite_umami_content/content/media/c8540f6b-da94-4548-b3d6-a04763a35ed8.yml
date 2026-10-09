@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c8540f6b-da94-4548-b3d6-a04763a35ed8
+  bundle: image
+  default_langcode: en
+  depends:
+    7bd841e3-c168-4b6d-9735-7b93fbcd7a94: file
+    f470414f-8357-4e4d-b024-70ca29916df6: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Mojito Mocktail'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Fresh mojito mocktail with garnish of mint leaves, ice, and sliced lime'
+      title: ''
+      width: 768
+      height: 512
+      entity: 7bd841e3-c168-4b6d-9735-7b93fbcd7a94

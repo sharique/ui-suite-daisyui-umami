@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1430e53d-3d7b-4321-92b1-47c23c7560f4
+  bundle: image
+  default_langcode: en
+  depends:
+    5a441bf8-26d5-4f93-a90a-db7f33171dee: file
+    205a0e00-2398-47dd-9d4c-17368d8b13f6: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Heritage Carrots'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Purple, orange, yellow and white heritage carrots'
+      title: ''
+      width: 768
+      height: 511
+      entity: 5a441bf8-26d5-4f93-a90a-db7f33171dee

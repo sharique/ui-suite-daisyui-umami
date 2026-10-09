@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 9aadf4a1-ded6-4017-a10d-a5e043396edf
+  bundle: banner_block
+  default_langcode: en
+  depends:
+    719fba86-caa8-451e-9cc3-31d692353d83: node
+    82d3ab42-169a-46e1-99b5-d59ab652efab: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Umami Home Banner'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_content_link:
+    -
+      title: 'View recipe'
+      options: {  }
+      target_uuid: 719fba86-caa8-451e-9cc3-31d692353d83
+  field_media_image:
+    -
+      entity: 82d3ab42-169a-46e1-99b5-d59ab652efab
+  field_summary:
+    -
+      value: 'A wholesome pasta bake is the ultimate comfort food. This delicious bake is super quick to prepare and an ideal midweek meal for all the family.'
+  field_title:
+    -
+      value: 'Super easy vegetarian pasta bake'

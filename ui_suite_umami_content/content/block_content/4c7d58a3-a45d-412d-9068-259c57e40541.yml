@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 4c7d58a3-a45d-412d-9068-259c57e40541
+  bundle: banner_block
+  default_langcode: en
+  depends:
+    9c775361-bdaa-4ceb-b03a-cf9c54b3e684: node
+    5531eeab-0ead-45cb-8c99-c9407fe4e454: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Umami Recipes Banner'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_content_link:
+    -
+      title: 'View recipe'
+      options: {  }
+      target_uuid: 9c775361-bdaa-4ceb-b03a-cf9c54b3e684
+  field_media_image:
+    -
+      entity: 5531eeab-0ead-45cb-8c99-c9407fe4e454
+  field_summary:
+    -
+      value: 'These sumptuous brownies should be gooey on the inside and crisp on the outside. A perfect indulgence!'
+  field_title:
+    -
+      value: 'Vegan chocolate and nut brownies'

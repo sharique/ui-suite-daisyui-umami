@@ -1,0 +1,29 @@
+name: 'UI Suite Umami'
+description: 'Umami-style food magazine site built with ui_suite_daisyui, Display Builder and UI Patterns.'
+type: 'Site'
+install:
+  - big_pipe
+  - contextual
+  - help
+  - dblog
+  - automated_cron
+  - page_cache
+  - dynamic_page_cache
+  - announcements_feed
+  - navigation
+  - gin
+  - ui_suite_daisyui
+recipes:
+  - ui_suite_umami_content_model
+  - ui_suite_umami_displays
+  - ui_suite_umami_content
+config:
+  actions:
+    system.theme:
+      simpleConfigUpdate:
+        default: ui_suite_daisyui
+        admin: gin
+    system.site:
+      simpleConfigUpdate:
+        name: 'UI Suite Umami Demo'
+        page.front: /node

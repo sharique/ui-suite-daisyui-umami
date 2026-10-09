@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 23958d7b-23e3-4aaf-8538-3c702bed62ff
+  bundle: recipe
+  default_langcode: en
+  depends:
+    46c51837-e840-4ae0-b03d-c36a0cb04412: user
+    a3f3f081-1a6a-4a5a-a35c-363317972773: media
+    890c4952-9163-4ef4-858c-053fd5358df5: taxonomy_term
+    46d48123-d90e-4459-8b46-febfa10330b9: taxonomy_term
+    1cda4745-41d0-427c-9619-cbe71d4696b2: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  title:
+    -
+      value: 'Watercress soup'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /recipes/watercress-soup
+      langcode: en
+  field_cooking_time:
+    -
+      value: 20
+  field_difficulty:
+    -
+      value: easy
+  field_ingredients:
+    -
+      value: '3 bunches watercress'
+    -
+      value: '3 potatoes'
+    -
+      value: '3 onions'
+    -
+      value: '2 leeks'
+    -
+      value: '800ml stock'
+    -
+      value: '5 tbsp crème fraîche'
+  field_media_image:
+    -
+      entity: a3f3f081-1a6a-4a5a-a35c-363317972773
+  field_number_of_servings:
+    -
+      value: 4
+  field_preparation_time:
+    -
+      value: 10
+  field_recipe_category:
+    -
+      entity: 890c4952-9163-4ef4-858c-053fd5358df5
+  field_recipe_instruction:
+    -
+      value: |
+        <ol>
+          <li>Prepare the vegetables by peeling and chopping the potatoes, finely chopping the onions, leeks and garlic.</li>
+          <li>Heat a little oil in a pan and add the chopped vegetables, gently cooking them for about 5 minutes.</li>
+          <li>Add the vegetable stock to the same pan and turn up the heat until simmering, adding the watercress after about 10 minutes. Cook until all the vegetables are soft and easily mashed.</li>
+          <li>Liquidize the soup either with a hand blender or in a mixer, until smooth.</li>
+          <li>If the soup has cooled too much whilst being liquidized, stir in the crème fraîche and reheat before serving (otherwise serve straight away). Season to taste.</li>
+        </ol>
+      format: basic_html
+  field_summary:
+    -
+      value: 'A wonderfully simple and light soup, making the most of seasonal, local produce. '
+      format: basic_html
+  field_tags:
+    -
+      entity: 46d48123-d90e-4459-8b46-febfa10330b9
+    -
+      entity: 1cda4745-41d0-427c-9619-cbe71d4696b2

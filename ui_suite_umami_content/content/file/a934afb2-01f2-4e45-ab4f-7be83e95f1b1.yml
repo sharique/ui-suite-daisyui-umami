@@ -1,0 +1,21 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a934afb2-01f2-4e45-ab4f-7be83e95f1b1
+  default_langcode: en
+default:
+  filename:
+    -
+      value: supermarket-savvy-umami.jpg
+  uri:
+    -
+      value: 'public://supermarket-savvy-umami.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 100645
+  status:
+    -
+      value: true

@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1b2c1878-202e-41a3-9e04-b8fe9c1a346d
+  bundle: image
+  default_langcode: en
+  depends:
+    40aeea2a-1bed-4fda-860e-c80c53308d31: file
+    822b2993-372f-47da-836b-474ddd438681: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Chocolate Brownie Umami'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'A delicious chocolate brownie'
+      title: ''
+      width: 768
+      height: 511
+      entity: 40aeea2a-1bed-4fda-860e-c80c53308d31

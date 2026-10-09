@@ -1,0 +1,21 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a1fd282f-7e82-48e2-9743-15f00ff361cf
+  default_langcode: en
+default:
+  filename:
+    -
+      value: borscht-with-pork-ribs-umami.jpg
+  uri:
+    -
+      value: 'public://borscht-with-pork-ribs-umami.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 66852
+  status:
+    -
+      value: true

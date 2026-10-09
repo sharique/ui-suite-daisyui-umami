@@ -1,0 +1,16 @@
+{
+  "name": "local/ui-suite-umami-displays",
+  "type": "drupal-recipe",
+  "description": "UI Suite Umami: displays",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/core": "^11.4",
+    "drupal/ui_suite_daisyui": "*",
+    "drupal/display_builder": "*",
+    "drupal/ui_patterns": "*",
+    "drupal/ui_icons": "*",
+    "drupal/ui_styles": "*",
+    "drupal/ui_skins": "*",
+    "local/ui-suite-umami-content-model": "*"
+  }
+}

@@ -1,0 +1,21 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 986c80d0-962f-406e-a760-dbd158810ac9
+  default_langcode: en
+default:
+  filename:
+    -
+      value: mediterranean-quiche-umami.jpg
+  uri:
+    -
+      value: 'public://mediterranean-quiche-umami.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 70160
+  status:
+    -
+      value: true

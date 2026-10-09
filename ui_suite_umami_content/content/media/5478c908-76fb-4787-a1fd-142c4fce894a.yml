@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5478c908-76fb-4787-a1fd-142c4fce894a
+  bundle: image
+  default_langcode: en
+  depends:
+    0564ae31-f296-4d4e-aaf9-f50b9f28e78f: file
+    f453e285-29e0-4d01-9aa1-27c802f215c0: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Mushrooms Umami'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'A delightful selection of mushroom varieties laid out on a simple wooden plate'
+      title: ''
+      width: 768
+      height: 512
+      entity: 0564ae31-f296-4d4e-aaf9-f50b9f28e78f

@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d8400854-15ea-43e5-aba8-c12c25231580
+  bundle: image
+  default_langcode: en
+  depends:
+    6638a677-288c-4c48-a303-1a9ab5940693: file
+    5859eedc-b9f0-400a-91cb-626a32603e19: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Crema catalana'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Typical Catalan dessert made from cream and egg yolks, covered with a traditional layer of caramelized sugar to provide a crispy contrast'
+      title: ''
+      width: 768
+      height: 512
+      entity: 6638a677-288c-4c48-a303-1a9ab5940693

@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 3b5b6fca-c695-4370-8de5-e53c826b7d5e
+  bundle: image
+  default_langcode: en
+  depends:
+    77b63a1d-4e6b-4441-9fc8-180b432c7cd8: file
+    54439861-d86f-433f-aa93-98543b7d0554: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Vegan chocolate and nut brownies'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'A stack of chocolate and pecan brownies, sprinkled with pecan crumbs and crushed walnut, fresh out of the oven'
+      title: ''
+      width: 770
+      height: 512
+      entity: 77b63a1d-4e6b-4441-9fc8-180b432c7cd8

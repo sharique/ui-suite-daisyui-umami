@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: e043411a-dda6-46c7-8af0-2ee628e95d80
+  default_langcode: en
+default:
+  name:
+    -
+      value: 'Samuel Adamson'
+  timezone:
+    -
+      value: Europe/Berlin
+  status:
+    -
+      value: true
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  roles:
+    -
+      target_id: author

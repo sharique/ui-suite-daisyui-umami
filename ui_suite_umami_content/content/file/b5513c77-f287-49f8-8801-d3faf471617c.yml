@@ -1,0 +1,21 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b5513c77-f287-49f8-8801-d3faf471617c
+  default_langcode: en
+default:
+  filename:
+    -
+      value: oatmeal-fruit-syrup-topping.jpg
+  uri:
+    -
+      value: 'public://oatmeal-fruit-syrup-topping.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 76171
+  status:
+    -
+      value: true

@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 38cbabbf-a65a-4619-9477-f21c7ee453c7
+  bundle: image
+  default_langcode: en
+  depends:
+    5e07e35c-515f-4f27-af3f-f784c780a042: file
+    235f7261-4661-4698-98fa-ed8a4d1a80cf: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Thai green curry'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'A traditional bowl of creamy, aromatic Thai green curry with chunks of chicken in a small bowl with jasmine rice'
+      title: ''
+      width: 768
+      height: 512
+      entity: 5e07e35c-515f-4f27-af3f-f784c780a042

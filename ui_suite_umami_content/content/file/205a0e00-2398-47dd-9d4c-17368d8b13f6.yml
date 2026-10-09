@@ -1,0 +1,21 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 205a0e00-2398-47dd-9d4c-17368d8b13f6
+  default_langcode: en
+default:
+  filename:
+    -
+      value: heritage-carrots.jpg
+  uri:
+    -
+      value: 'public://heritage-carrots.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 36372
+  status:
+    -
+      value: true

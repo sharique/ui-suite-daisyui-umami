@@ -1,0 +1,65 @@
+name: 'UI Suite Umami: content model'
+description: 'Content types, fields, vocabularies, media, image styles, roles and editorial workflow ported from the Umami demo profile.'
+type: 'Content type'
+install:
+  - node
+  - taxonomy
+  - block_content
+  - media
+  - media_library
+  - menu_ui
+  - menu_link_content
+  - path
+  - options
+  - datetime
+  - image
+  - file
+  - responsive_image
+  - editor
+  - ckeditor5
+  - field_ui
+  - views
+  - views_ui
+  - workflows
+  - content_moderation
+  - breakpoint
+  - ui_suite_daisyui
+  - language
+  - contextual
+  - navigation
+config:
+  # Core module config (view modes, image styles, media library, main menu) is
+  # imported only so the displays below can depend on it; a host site may have
+  # changed it, and that must not block the recipe.
+  strict: false
+  import:
+    media_library:
+      - core.entity_form_mode.media.media_library
+      - core.entity_view_mode.media.media_library
+      - image.style.media_library
+      - views.view.media_library
+    node:
+      - core.entity_view_mode.node.full
+      - core.entity_view_mode.node.rss
+      - core.entity_view_mode.node.teaser
+    image:
+      - image.style.medium
+      - image.style.thumbnail
+    system:
+      - system.menu.main
+    # Recipe module installs skip navigation's two menus (core quirk), so the
+    # navigation block layout would reference a missing menu.
+    navigation:
+      - system.menu.content
+      - system.menu.navigation-user-links
+  actions:
+    user.role.anonymous:
+      grantPermissions:
+        - 'access content'
+        - 'use text format restricted_html'
+        - 'view media'
+    user.role.authenticated:
+      grantPermissions:
+        - 'access content'
+        - 'use text format basic_html'
+        - 'view media'

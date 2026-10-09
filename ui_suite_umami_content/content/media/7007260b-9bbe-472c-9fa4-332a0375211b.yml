@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7007260b-9bbe-472c-9fa4-332a0375211b
+  bundle: image
+  default_langcode: en
+  depends:
+    18663122-fce1-40cf-b74d-c007bcb2dd5e: file
+    defb9ebd-8f6f-45ae-b3db-86f28c47f956: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Fiery chili sauce'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'An iridescent array of chilies, onions, and garlic, slowly sweating over a low heat'
+      title: ''
+      width: 768
+      height: 512
+      entity: 18663122-fce1-40cf-b74d-c007bcb2dd5e

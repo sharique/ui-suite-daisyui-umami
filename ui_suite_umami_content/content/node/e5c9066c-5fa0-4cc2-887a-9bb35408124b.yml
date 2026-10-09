@@ -1,0 +1,67 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e5c9066c-5fa0-4cc2-887a-9bb35408124b
+  bundle: article
+  default_langcode: en
+  depends:
+    9d5aaf59-e05b-4607-9364-b1a52a5b0758: user
+    58e9c519-8d51-459e-8d29-f7b2329f3af6: media
+    724bedfb-04ba-48e9-bd76-8d0003dd0bff: taxonomy_term
+    c73f9f0c-c070-4f7c-bd5b-cf793624b9e0: taxonomy_term
+    24771211-5cc8-4024-a735-d8ff80b1fbe2: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 9d5aaf59-e05b-4607-9364-b1a52a5b0758
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 9d5aaf59-e05b-4607-9364-b1a52a5b0758
+  title:
+    -
+      value: 'Give it a go and grow your own herbs'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /articles/give-it-a-go-and-grow-your-own-herbs
+      langcode: en
+  field_body:
+    -
+      value: |
+        <p>There's nothing like having your own supply of fresh herbs, readily available and close at hand to use while cooking. Whether you have a large garden or a small kitchen window sill, there's always enough room for something home grown.</p>
+        <h2>Outdoors</h2>
+        <h3>Mint</h3>
+        <p>Mint is a great plant to grow as it's hardy and can grow in almost any soil. Mint can grow wild, so keep it contained in a pot or it might spread and take over your whole garden.</p>
+        <h3>Sage</h3>
+        <p>Like mint, sage is another prolific growing plant and will take over your garden if you let it. Highly aromatic, the sage plant can be planted in a pot or flower bed in well drained soil. The best way to store the herb is to sun dry the leaves and store in a cool, dark cupboard in a sealed container.</p>
+        <h3>Rosemary</h3>
+        <p>Rosemary plants grow into lovely shrubs. Easily grown from cuttings, rosemary plants do not like freezing temperatures so keep pots or planted bushes near the home to shelter them from the cold. It grows well in pots as it likes dry soil, but can survive well in the ground too. If pruning rosemary to encourage it into a better shape, save the branches and hang them upside down to preserve the flavor and use in food.</p>
+        <h2>Indoors</h2>
+        <h3>Basil</h3>
+        <p>Perfect in sunny spot on a kitchen window sill. Basil is an annual plant, so will die off in the autumn, so it's a good idea to harvest it in the summer if you have an abundance and dry it. Picked basil stays fresh longer if it is placed in water (like fresh flowers). A great way to store basil is to make it into pesto!</p>
+        <h3>Chives</h3>
+        <p>A versatile herb, chives can grow well indoors. Ensure the plant is watered well, and gets plenty of light. Remember to regularly trim the chives. This prevents the flowers from developing and encourages new growth.</p>
+        <h3>Coriander (Cilantro)</h3>
+        <p>Coriander can grow indoors, but unlike the other herbs, it doesn't like full sun. If you have a south facing kitchen window, this isn't the place for it. Although not as thirsty as basil, coriander doesn't like dry soil so don't forget to water it! Cut coriander is best stored in the fridge.</p>
+      format: basic_html
+  field_media_image:
+    -
+      entity: 58e9c519-8d51-459e-8d29-f7b2329f3af6
+  field_tags:
+    -
+      entity: 724bedfb-04ba-48e9-bd76-8d0003dd0bff
+    -
+      entity: c73f9f0c-c070-4f7c-bd5b-cf793624b9e0
+    -
+      entity: 24771211-5cc8-4024-a735-d8ff80b1fbe2

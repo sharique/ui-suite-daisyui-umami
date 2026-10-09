@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 924ab293-8f5f-45a1-9c7f-2423ae61a241
+  bundle: footer_promo_block
+  default_langcode: en
+  depends:
+    e78bd31e-fd0e-4b43-abde-b0678615a8f0: node
+    d8fd0887-1a76-49a6-8a23-c84ce1bea414: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Umami footer promo'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_content_link:
+    -
+      title: 'Find out more'
+      options: {  }
+      target_uuid: e78bd31e-fd0e-4b43-abde-b0678615a8f0
+  field_media_image:
+    -
+      entity: d8fd0887-1a76-49a6-8a23-c84ce1bea414
+  field_summary:
+    -
+      value: 'Skills and know-how. Magazine exclusive articles, recipes and plenty of reasons to get your copy today.'
+  field_title:
+    -
+      value: 'Umami Food Magazine'

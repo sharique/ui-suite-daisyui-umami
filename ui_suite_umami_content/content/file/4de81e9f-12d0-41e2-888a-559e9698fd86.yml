@@ -1,0 +1,21 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4de81e9f-12d0-41e2-888a-559e9698fd86
+  default_langcode: en
+default:
+  filename:
+    -
+      value: home-grown-herbs.jpg
+  uri:
+    -
+      value: 'public://home-grown-herbs.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 114984
+  status:
+    -
+      value: true

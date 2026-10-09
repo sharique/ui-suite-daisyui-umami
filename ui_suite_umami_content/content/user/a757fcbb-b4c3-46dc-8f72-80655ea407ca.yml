@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: a757fcbb-b4c3-46dc-8f72-80655ea407ca
+  default_langcode: en
+default:
+  name:
+    -
+      value: 'Gregorio Sánchez'
+  timezone:
+    -
+      value: Europe/Berlin
+  status:
+    -
+      value: true
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  roles:
+    -
+      target_id: author

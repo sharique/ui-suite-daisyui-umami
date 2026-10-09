@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e78bd31e-fd0e-4b43-abde-b0678615a8f0
+  bundle: page
+  default_langcode: en
+  depends:
+    e043411a-dda6-46c7-8af0-2ee628e95d80: user
+default:
+  revision_uid:
+    -
+      entity: e043411a-dda6-46c7-8af0-2ee628e95d80
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: e043411a-dda6-46c7-8af0-2ee628e95d80
+  title:
+    -
+      value: 'About Umami'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /about-umami
+      langcode: en
+  field_body:
+    -
+      value: '<p>Umami is a fictional food magazine that has been created to demonstrate how you might build a Drupal site using functionality provided ''out of the box''.</p><p>For more information visit <a href="https://www.drupal.org/docs/umami-drupal-demonstration-installation-profile">https://www.drupal.org/docs/umami-drupal-demonstration-installation-profile</a>.</p>'
+      format: basic_html

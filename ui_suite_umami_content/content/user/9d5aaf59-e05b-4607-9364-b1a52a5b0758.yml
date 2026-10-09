@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 9d5aaf59-e05b-4607-9364-b1a52a5b0758
+  default_langcode: en
+default:
+  name:
+    -
+      value: 'Holly Foat'
+  timezone:
+    -
+      value: Europe/Berlin
+  status:
+    -
+      value: true
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  roles:
+    -
+      target_id: author

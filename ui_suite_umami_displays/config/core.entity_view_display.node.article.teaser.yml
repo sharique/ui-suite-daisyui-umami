@@ -1,0 +1,191 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_body
+    - field.field.node.article.field_media_image
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - display_builder
+    - text
+    - user
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        node_id: ab058be9a4e4a718
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_daisyui:card'
+            variant_id:
+              source_id: select
+              source:
+                value: default
+              node_id: 6ac942ae0c54e
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+                node_id: 6ac942ae0c6a3
+              heading_level:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6ac942ae0c70d
+              image_bottom:
+                source_id: checkbox
+                node_id: 6ac942ae0c76b
+                source:
+                  value: 0
+              centered:
+                source_id: checkbox
+                node_id: 6ac942ae0c7cd
+                source:
+                  value: 0
+              image_full:
+                source_id: checkbox
+                node_id: 6ac942ae0c824
+                source:
+                  value: 0
+              actions_top:
+                source_id: checkbox
+                node_id: 6ac942ae0c87b
+                source:
+                  value: 0
+              actions_position:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6ac942ae0c8d1
+              size:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6ac942ae0c928
+              border:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6ac942ae0c97f
+              url:
+                source_id: entity_link
+                source:
+                  template: ''
+                  absolute: 0
+                node_id: 6ac942ae0c9d5
+            slots:
+              image:
+                sources:
+                  -
+                    node_id: b912bfecd59f3eaa
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:field_media_image'
+                      'field:node:article:field_media_image':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:field_media_image'
+                              source:
+                                type: entity_reference_entity_view
+                                label: hidden
+                                settings:
+                                  view_mode: responsive_3x2
+                                  link: false
+                                third_party_settings: {  }
+                                weight: 1
+                                region: content
+                    third_party_settings: {  }
+              title:
+                sources:
+                  -
+                    node_id: 2d8d95585a7206ec
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:field_tags'
+                      'field:node:article:field_tags':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:field_tags'
+                              source:
+                                type: entity_reference_label
+                                settings:
+                                  link: '1'
+                              node_id: ''
+                              _weight: '0'
+                              third_party_settings: {  }
+                    third_party_settings: {  }
+              text:
+                sources:
+                  -
+                    node_id: bd07fd9922a8054b
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:field_body'
+                      'field:node:article:field_body':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:field_body'
+                              source:
+                                type: text_trimmed
+                                label: hidden
+                                settings:
+                                  trim_length: 600
+                                third_party_settings: {  }
+                                weight: 2
+                                region: content
+                    third_party_settings: {  }
+              actions:
+                sources:
+                  -
+                    node_id: a531917d4d36e376
+                    source_id: extra_field
+                    source:
+                      field: links
+                    third_party_settings: {  }
+        third_party_settings: {  }
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  field_body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive_3x2
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true

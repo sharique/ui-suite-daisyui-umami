@@ -1,0 +1,96 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: af9765b2-3b5a-4947-96ed-71a61bf223a4
+  bundle: recipe
+  default_langcode: en
+  depends:
+    46c51837-e840-4ae0-b03d-c36a0cb04412: user
+    b5b8ec70-3bef-4dcf-8207-2dacc46c2935: media
+    8f6d177c-89ab-49a3-9ee6-23a87f86da13: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  title:
+    -
+      value: 'Gluten free pizza'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /recipes/gluten-free-pizza
+      langcode: en
+  field_cooking_time:
+    -
+      value: 15
+  field_difficulty:
+    -
+      value: medium
+  field_ingredients:
+    -
+      value: '400g gluten free flour'
+    -
+      value: ' 125ml warm water'
+    -
+      value: ' 125ml milk'
+    -
+      value: ' 1 sachet dried yeast'
+    -
+      value: ' 2 tsp sugar'
+    -
+      value: ' 1 tsp salt'
+    -
+      value: ' 2 tbsp olive oil'
+    -
+      value: ' 4 tbsp tomato puree'
+    -
+      value: ' 1 garlic clove'
+    -
+      value: ' Fresh basil'
+    -
+      value: ' 200g mozzarella'
+    -
+      value: ' 100g rocket'
+    -
+      value: ' 5 slices Parma ham'
+  field_media_image:
+    -
+      entity: b5b8ec70-3bef-4dcf-8207-2dacc46c2935
+  field_number_of_servings:
+    -
+      value: 4
+  field_preparation_time:
+    -
+      value: 15
+  field_recipe_category:
+    -
+      entity: 8f6d177c-89ab-49a3-9ee6-23a87f86da13
+  field_recipe_instruction:
+    -
+      value: |
+        <ol>
+          <li>Preheat the oven to 425°F/220°C. Mix some of the milk and water in a jug, and add the yeast and sugar, then set aside.</li>
+          <li>In a bowl, mix the flour, salt and oil. Slowly add the liquid from the jug and form into a dough.</li>
+          <li>Break the dough in half and shape into two pizza bases. Set aside for about 15 minutes, whilst making the topping.</li>
+          <li>Spread the tomato puree over the pizza bases, chop the basil and rocket and sprinkle over the tomato. Lay the chopped Parma ham on top and add thick slices of mozzarella across the pizza.</li>
+          <li>Cook in the oven directly on the top shelf (with a tray underneath) for 10-12 minutes until the mozzarella is bubbling. Season with salt and pepper and serve.</li>
+        </ol>
+      format: basic_html
+  field_summary:
+    -
+      value: 'A gorgeous and simple gluten free pizza, with deliciously indulgent mozzarella and Parma ham. Can easily be vegetarian by leaving out the ham.'
+      format: basic_html

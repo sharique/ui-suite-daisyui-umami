@@ -1,0 +1,87 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1dcc1d85-3d86-4f49-b055-cbd7782b948b
+  bundle: recipe
+  default_langcode: en
+  depends:
+    46c51837-e840-4ae0-b03d-c36a0cb04412: user
+    38cbabbf-a65a-4619-9477-f21c7ee453c7: media
+    8f6d177c-89ab-49a3-9ee6-23a87f86da13: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  title:
+    -
+      value: 'Thai green curry'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /recipes/thai-green-curry
+      langcode: en
+  field_cooking_time:
+    -
+      value: 15
+  field_difficulty:
+    -
+      value: medium
+  field_ingredients:
+    -
+      value: '400g coconut milk'
+    -
+      value: ' 400g chicken or tofu'
+    -
+      value: ' 1 tbsp Thai green curry paste'
+    -
+      value: ' 1 garlic clove'
+    -
+      value: ' 2 tsp fish sauce'
+    -
+      value: ' 400g mushrooms'
+    -
+      value: ' 200g green beans'
+    -
+      value: ' Fresh coriander leaves'
+    -
+      value: ' Jasmine rice'
+  field_media_image:
+    -
+      entity: 38cbabbf-a65a-4619-9477-f21c7ee453c7
+  field_number_of_servings:
+    -
+      value: 4
+  field_preparation_time:
+    -
+      value: 10
+  field_recipe_category:
+    -
+      entity: 8f6d177c-89ab-49a3-9ee6-23a87f86da13
+  field_recipe_instruction:
+    -
+      value: |
+        <ol>
+          <li>In a large wok, brown the chicken until golden, then turn the heat down and gently cook the garlic. Add the chopped green beans and stir.</li>
+          <li>Add the coconut milk, green curry paste and fish sauce. Mix well and slowly simmer.</li>
+          <li>Add the chopped mushrooms and simmer until the chicken (or tofu) is cooked.</li>
+          <li>Serve with jasmine rice and a sprinkle of coriander.</li>
+        </ol>
+      format: basic_html
+  field_summary:
+    -
+      value: 'A quick and easy version of the classic Thai green curry. Perfect for a midweek meal!'
+      format: basic_html

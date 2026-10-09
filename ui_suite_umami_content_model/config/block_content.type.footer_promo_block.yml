@@ -1,0 +1,6 @@
+langcode: en
+status: true
+id: footer_promo_block
+label: 'Footer promo block'
+revision: false
+description: 'A footer promo block contains a title, promo text, and a "find out more" link.'

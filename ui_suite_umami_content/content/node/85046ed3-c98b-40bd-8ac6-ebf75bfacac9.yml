@@ -1,0 +1,103 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 85046ed3-c98b-40bd-8ac6-ebf75bfacac9
+  bundle: recipe
+  default_langcode: en
+  depends:
+    46c51837-e840-4ae0-b03d-c36a0cb04412: user
+    01deac9e-be15-456c-b774-e13f870b4d13: media
+    8f6d177c-89ab-49a3-9ee6-23a87f86da13: taxonomy_term
+    a231aad6-63cb-4426-9e09-3549215fc47b: taxonomy_term
+    bbfac831-3c36-4f41-a9e2-f491f8e6ebd6: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+  title:
+    -
+      value: 'Deep mediterranean quiche'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /recipes/deep-mediterranean-quiche
+      langcode: en
+  field_cooking_time:
+    -
+      value: 30
+  field_difficulty:
+    -
+      value: medium
+  field_ingredients:
+    -
+      value: 'For the pastry:'
+    -
+      value: '280g plain flour'
+    -
+      value: '140g butter'
+    -
+      value: 'Cold water'
+    -
+      value: 'For the filling:'
+    -
+      value: '1 onion'
+    -
+      value: '2 garlic cloves'
+    -
+      value: 'Half a courgette'
+    -
+      value: '450ml soya milk'
+    -
+      value: '500g grated parmesan'
+    -
+      value: '2 eggs'
+    -
+      value: '200g sun dried tomatoes'
+    -
+      value: '100g feta'
+  field_media_image:
+    -
+      entity: 01deac9e-be15-456c-b774-e13f870b4d13
+  field_number_of_servings:
+    -
+      value: 8
+  field_preparation_time:
+    -
+      value: 40
+  field_recipe_category:
+    -
+      entity: 8f6d177c-89ab-49a3-9ee6-23a87f86da13
+  field_recipe_instruction:
+    -
+      value: |
+        <ol>
+          <li>Preheat the oven to 400°F/200°C. Starting with the pastry; rub the flour and butter together in a bowl until crumbling like breadcrumbs. Add water, a little at a time, until it forms a dough.</li>
+          <li>Roll out the pastry on a floured board and gently spread over your tin. Place in the fridge for 20 minutes before blind baking for a further 10.</li>
+          <li>Whilst the pastry is cooling, chop and gently cook the onions, garlic and courgette.</li>
+          <li>In a large bowl, add the soya milk, half the parmesan, and the eggs. Gently mix.</li>
+          <li>Once the pastry is cooked, spread the onions, garlic and sun dried tomatoes over the base and pour the eggs mix over. Sprinkle the remaining parmesan and careful lay the feta over the top. Bake for 30 minutes or until golden brown.</li>
+        </ol>
+      format: basic_html
+  field_summary:
+    -
+      value: "An Italian inspired quiche with sun dried tomatoes and courgette. A perfect light meal for a summer's day."
+      format: basic_html
+  field_tags:
+    -
+      entity: a231aad6-63cb-4426-9e09-3549215fc47b
+    -
+      entity: bbfac831-3c36-4f41-a9e2-f491f8e6ebd6
