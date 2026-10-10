@@ -176,6 +176,78 @@ sources:
     source:
       component:
         component_id: 'ui_suite_daisyui:grid_1_region'
+        variant_id: null
+        props:
+          attributes:
+            source_id: attributes
+            source:
+              value: ''
+            node_id: 6aca78b4d86cd
+          container_type:
+            source_id: select
+            source:
+              value: 'container mx-auto'
+            node_id: 6aca78b4d8775
+          background_image:
+            source_id: url
+            source:
+              value: null
+            node_id: 6aca78b4d880f
+          background_size:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d88ba
+          background_position:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d8956
+          background_repeat:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d89ed
+          col_span:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d8a85
+          col_start:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d8b1a
+          col_span_lg:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d8bb1
+          col_start_lg:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d8c47
+          col_span_md:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d8ced
+          col_start_md:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d8d84
+          col_span_sm:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d8e1a
+          col_start_sm:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6aca78b4d8eb0
         slots:
           col_first:
             sources:
@@ -183,20 +255,31 @@ sources:
                 node_id: 59dfc35cda334646
                 source_id: main_page_content
                 source: {  }
-                third_party_settings: {  }
+                third_party_settings:
+                  styles:
+                    selected: {  }
+                    extra: 'container mx-auto p-4'
               -
                 node_id: 5c132e860fd5f24a
                 source_id: block
                 source:
                   plugin_id: 'views_block:recipe_collections-block'
+                  'views_block:recipe_collections-block':
+                    id: 'views_block:recipe_collections-block'
+                    label: 'Recipe collections'
+                    label_display: '1'
+                    provider: views
+                    views_label: 'Recipe collections'
+                    items_per_page: null
                 third_party_settings:
                   styles:
-                    selected: {  }
-                    extra: bg-gray-600
+                    selected:
+                      colors_background_color: bg-base-300
+                      colors_text_color: text-primary-content
+                    extra: 'container mx-auto p-4'
     third_party_settings:
       styles:
-        selected:
-          sizing_width: w-4/5
+        selected: {  }
         extra: ''
   -
     node_id: 4366a752f42d668e
@@ -214,7 +297,7 @@ sources:
           container_type:
             source_id: select
             source:
-              value: breakout
+              value: 'container mx-auto'
             node_id: 6ac94c6adab12
           background_image:
             source_id: url
@@ -288,7 +371,7 @@ sources:
                     variant_id:
                       source_id: select
                       source:
-                        value: center
+                        value: default
                       node_id: 6ac94593b47c6
                     props:
                       attributes:
@@ -297,7 +380,13 @@ sources:
                           value: ''
                         node_id: 6ac94593b489f
                       links:
-                        source_id: ''
+                        source_id: menu
+                        source:
+                          menu: footer
+                          level: '1'
+                          depth: '0'
+                          expand_all_items: '1'
+                          set_active_trail: 0
                         node_id: 6ac94593b4900
                       links_break:
                         source_id: number
@@ -322,10 +411,15 @@ sources:
                             source_id: block
                             source:
                               plugin_id: 'block_content:924ab293-8f5f-45a1-9c7f-2423ae61a241'
+                              'block_content:924ab293-8f5f-45a1-9c7f-2423ae61a241':
+                                id: 'block_content:924ab293-8f5f-45a1-9c7f-2423ae61a241'
+                                label: 'Umami footer promo'
+                                label_display: '1'
+                                provider: block_content
+                                view_mode: full
                             third_party_settings:
                               styles:
-                                selected:
-                                  spacing_padding_top: pt-2
+                                selected: {  }
                                 extra: ''
                       social:
                         sources:
@@ -334,20 +428,25 @@ sources:
                             source_id: block
                             source:
                               plugin_id: 'system_menu_block:footer'
-                          -
-                            node_id: 395ac6dc79b71105
-                            source_id: block
-                            source:
-                              plugin_id: 'block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29de'
-                            third_party_settings:
-                              styles:
-                                selected:
-                                  colors_background_color: bg-neutral
-                                  colors_text_color: text-primary-content
-                                extra: ''
-                third_party_settings: {  }
+                third_party_settings:
+                  styles:
+                    selected:
+                      colors_background_color: bg-base-300
+                    extra: 'container mx-auto p-10'
+              -
+                node_id: 395ac6dc79b71105
+                source_id: block
+                source:
+                  plugin_id: 'block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29de'
+                third_party_settings:
+                  styles:
+                    selected:
+                      colors_background_color: bg-neutral
+                      colors_text_color: text-primary-content
+                    extra: 'container mx-auto p-4'
     third_party_settings:
       styles:
         selected:
-          colors_background_color: bg-base-300
+          colors_background_color: bg-neutral
+          colors_text_color: text-primary-content
         extra: ''

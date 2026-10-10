@@ -1,0 +1,213 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_promo_block
+    - field.field.block_content.footer_promo_block.field_content_link
+    - field.field.block_content.footer_promo_block.field_media_image
+    - field.field.block_content.footer_promo_block.field_summary
+    - field.field.block_content.footer_promo_block.field_title
+  module:
+    - display_builder
+    - link
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        node_id: 81504beddd421a87
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_daisyui:card'
+            variant_id:
+              source_id: select
+              source:
+                value: side
+              node_id: 6aca7c2b9cc3f
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+                node_id: 6aca7c2b9ce75
+              heading_level:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6aca7c2b9cf29
+              image_bottom:
+                source_id: checkbox
+                node_id: 6aca7c2b9cfd1
+                source:
+                  value: 0
+              centered:
+                source_id: checkbox
+                node_id: 6aca7c2b9d077
+                source:
+                  value: 0
+              image_full:
+                source_id: checkbox
+                node_id: 6aca7c2b9d10d
+                source:
+                  value: 0
+              actions_top:
+                source_id: checkbox
+                node_id: 6aca7c2b9d19c
+                source:
+                  value: 0
+              actions_position:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6aca7c2b9d22f
+              size:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6aca7c2b9d2cc
+              border:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6aca7c2b9d36b
+              url:
+                source_id: url
+                source:
+                  value: null
+                node_id: 6aca7c2b9d3ff
+            slots:
+              image:
+                sources:
+                  -
+                    node_id: b3e724b0ea966cc9
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:block_content:footer_promo_block:field_media_image'
+                      'field:block_content:footer_promo_block:field_media_image':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:block_content:footer_promo_block:field_media_image'
+                              source:
+                                type: entity_reference_entity_view
+                                label: hidden
+                                settings:
+                                  view_mode: medium_8_7
+                                  link: false
+                                third_party_settings: {  }
+                                weight: 1
+                                region: content
+                    third_party_settings: {  }
+              title:
+                sources:
+                  -
+                    node_id: f3807eb6b73d6853
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:block_content:footer_promo_block:field_title'
+                      'field:block_content:footer_promo_block:field_title':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:block_content:footer_promo_block:field_title'
+                              source:
+                                type: string
+                                label: hidden
+                                settings:
+                                  link_to_entity: false
+                                  link_rel: canonical
+                                third_party_settings: {  }
+                                weight: 2
+                                region: content
+                    third_party_settings: {  }
+              text:
+                sources:
+                  -
+                    node_id: 5e22255b5d55e771
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:block_content:footer_promo_block:field_summary'
+                      'field:block_content:footer_promo_block:field_summary':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:block_content:footer_promo_block:field_summary'
+                              source:
+                                type: basic_string
+                                label: hidden
+                                settings: {  }
+                                third_party_settings: {  }
+                                weight: 3
+                                region: content
+                    third_party_settings: {  }
+              actions:
+                sources:
+                  -
+                    node_id: 82c014702d492163
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:block_content:footer_promo_block:field_content_link'
+                      'field:block_content:footer_promo_block:field_content_link':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:block_content:footer_promo_block:field_content_link'
+                              source:
+                                type: link
+                                label: hidden
+                                settings:
+                                  trim_length: 80
+                                  url_only: false
+                                  url_plain: false
+                                  rel: ''
+                                  target: ''
+                                third_party_settings: {  }
+                                weight: 4
+                                region: content
+                    third_party_settings: {  }
+        third_party_settings: {  }
+id: block_content.footer_promo_block.default
+targetEntityType: block_content
+bundle: footer_promo_block
+mode: default
+content:
+  field_content_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: medium_8_7
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_summary:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

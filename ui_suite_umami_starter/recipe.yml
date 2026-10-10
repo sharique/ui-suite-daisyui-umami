@@ -27,3 +27,51 @@ config:
       simpleConfigUpdate:
         name: 'UI Suite Umami Demo'
         page.front: /node
+    ui_suite_daisyui.settings:
+      simpleConfigUpdate:
+        third_party_settings:
+          ui_skins:
+            theme: light
+            css_variables:
+              color-primary:
+                ":root": "#008068"
+              color-primary-content:
+                ":root": "#ffffff"
+              color-secondary:
+                ":root": "#fcece7"
+              color-secondary-content:
+                ":root": "#464646"
+              color-accent:
+                ":root": "#da3c13"
+              color-accent-content:
+                ":root": "#ffffff"
+              color-neutral:
+                ":root": "#464646"
+              color-neutral-content:
+                ":root": "#fbf5ee"
+              color-base-100:
+                ":root": "#fbf5ee"
+              color-base-200:
+                ":root": "#e6eee0"
+              color-base-300:
+                ":root": "#cccccc"
+              color-base-content:
+                ":root": "#464646"
+              color-info:
+                ":root": "#0094f0"
+              color-info-content:
+                ":root": "#ffffff"
+              color-success:
+                ":root": "#008068"
+              color-success-content:
+                ":root": "#ffffff"
+              color-error:
+                ":root": "#cc2a00"
+              color-error-content:
+                ":root": "#ffffff"
+              radius-selector:
+                ":root": "10em"
+              radius-field:
+                ":root": "0.1875rem"
+              radius-box:
+                ":root": "0.4375rem"

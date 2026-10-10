@@ -70,7 +70,7 @@ third_party_settings:
               border:
                 source_id: select
                 source:
-                  value: ''
+                  value: border
                 node_id: 6ac942ae0c97f
               url:
                 source_id: entity_link

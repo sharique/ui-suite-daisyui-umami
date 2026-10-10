@@ -21,3 +21,7 @@ install:
   - navigation
 recipes:
   - ui_suite_umami_content_model
+config:
+  # Displays are meant to be edited in Display Builder after the recipe is
+  # applied, so a re-apply must not fail, or overwrite, a customised display.
+  strict: false

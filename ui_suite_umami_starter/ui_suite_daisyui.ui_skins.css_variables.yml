@@ -1,0 +1,200 @@
+# Reference override of ui_suite_daisyui's CSS variable definitions with the Umami
+# palette (default_values only). To use it as a definition file, copy it into a
+# subtheme; this recipe applies the same values as ui_suite_daisyui theme
+# settings instead (see recipe.yml), which needs no custom theme.
+
+color-primary:
+  category: "Colors"
+  label: "Primary brand color"
+  type: textfield
+  default_values:
+    ":root": "#008068"
+
+color-primary-content:
+  category: "Colors"
+  label: "Foreground content color to use on primary color"
+  type: textfield
+  default_values:
+    ":root": "#ffffff"
+
+color-secondary:
+  category: "Colors"
+  label: "Secondary brand color"
+  type: textfield
+  default_values:
+    ":root": "#fcece7"
+
+color-secondary-content:
+  category: "Colors"
+  label: "Foreground content color to use on secondary color"
+  type: textfield
+  default_values:
+    ":root": "#464646"
+
+color-accent:
+  category: "Colors"
+  label: "Accent brand color"
+  type: textfield
+  default_values:
+    ":root": "#da3c13"
+
+color-accent-content:
+  category: "Colors"
+  label: "Foreground content color to use on accent color"
+  type: textfield
+  default_values:
+    ":root": "#ffffff"
+
+color-neutral:
+  category: "Colors"
+  label: "Neutral dark color"
+  type: textfield
+  default_values:
+    ":root": "#464646"
+
+color-neutral-content:
+  category: "Colors"
+  label: "Foreground content color to use on neutral color"
+  type: textfield
+  default_values:
+    ":root": "#fbf5ee"
+
+color-base-100:
+  category: "Colors"
+  label: "Base color of page, used for blank backgrounds"
+  type: textfield
+  default_values:
+    ":root": "#fbf5ee"
+
+color-base-200:
+  category: "Colors"
+  label: "Base color, darker shade"
+  type: textfield
+  default_values:
+    ":root": "#e6eee0"
+
+color-base-300:
+  category: "Colors"
+  label: "Base color, even more darker shade"
+  type: textfield
+  default_values:
+    ":root": "#cccccc"
+
+color-base-content:
+  category: "Colors"
+  label: "Foreground content color to use on base color"
+  type: textfield
+  default_values:
+    ":root": "#464646"
+
+color-info:
+  category: "Colors"
+  label: "Info color"
+  type: textfield
+  default_values:
+    ":root": "#0094f0"
+
+color-info-content:
+  category: "Colors"
+  label: "Foreground content color to use on info color"
+  type: textfield
+  default_values:
+    ":root": "#ffffff"
+
+color-success:
+  category: "Colors"
+  label: "Success color"
+  type: textfield
+  default_values:
+    ":root": "#008068"
+
+color-success-content:
+  category: "Colors"
+  label: "Foreground content color to use on success color"
+  type: textfield
+  default_values:
+    ":root": "#ffffff"
+
+color-warning:
+  category: "Colors"
+  label: "Warning color"
+  type: textfield
+  default_values:
+    ":root": ""
+
+color-warning-content:
+  category: "Colors"
+  label: "Foreground content color to use on warning color"
+  type: textfield
+  default_values:
+    ":root": ""
+
+color-error:
+  category: "Colors"
+  label: "Error color"
+  type: textfield
+  default_values:
+    ":root": "#cc2a00"
+
+color-error-content:
+  category: "Colors"
+  label: "Foreground content color to use on error color"
+  type: textfield
+  default_values:
+    ":root": "#ffffff"
+
+radius-selector:
+  category: "Border radius"
+  label: "Border radius for selectors like checkbox, toggle, badge, etc"
+  type: textfield
+  default_values:
+    ":root": "10em"
+
+radius-field:
+  category: "Border radius"
+  label: "Border radius for fields like input, select, tab, etc"
+  type: textfield
+  default_values:
+    ":root": "0.1875rem"
+
+radius-box:
+  category: "Border radius"
+  label: "Border radius for boxes like card, modal, alert, etc"
+  type: textfield
+  default_values:
+    ":root": "0.4375rem"
+
+size-selector:
+  category: "Sizes"
+  label: "Base scale size for selectors like checkbox, toggle, badge, etc"
+  type: textfield
+  default_values:
+    ":root": ""
+
+size-field:
+  category: "Sizes"
+  label: "Base scale size for fields like input, select, tab, etc"
+  type: textfield
+  default_values:
+    ":root": ""
+
+border:
+  category: "Borders"
+  label: "Border width of all components"
+  type: textfield
+  default_values:
+    ":root": ""
+
+depth:
+  category: "Effects"
+  label: "(binary) Adds a depth effect for relevant components"
+  type: textfield
+  default_values:
+    ":root": ""
+
+noise:
+  category: "Effects"
+  label: "(binary) Adds a background noise effect for relevant components"
+  type: textfield
+  default_values:
+    ":root": ""

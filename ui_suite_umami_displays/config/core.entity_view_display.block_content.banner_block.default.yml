@@ -44,9 +44,9 @@ third_party_settings:
                   value: 0
               responsive_centered:
                 source_id: checkbox
-                source:
-                  value: '1'
                 node_id: 6ac958f27a153
+                source:
+                  value: 0
               overlay_image:
                 source_id: url
                 source:

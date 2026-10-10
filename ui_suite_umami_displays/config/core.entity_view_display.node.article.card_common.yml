@@ -1,0 +1,140 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_common
+    - field.field.node.article.field_body
+    - field.field.node.article.field_media_image
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - display_builder
+    - user
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        node_id: 9f068e75e5aba07c
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_daisyui:card'
+            variant_id:
+              source_id: select
+              source:
+                value: default
+              node_id: 6aca724555343
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+                node_id: 6aca7245555a3
+              heading_level:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6aca72455566c
+              image_bottom:
+                source_id: checkbox
+                source:
+                  value: '1'
+                node_id: 6aca724555715
+              centered:
+                source_id: checkbox
+                node_id: 6aca7245557bd
+                source:
+                  value: 0
+              image_full:
+                source_id: checkbox
+                node_id: 6aca724555855
+                source:
+                  value: 0
+              actions_top:
+                source_id: checkbox
+                node_id: 6aca7245558eb
+                source:
+                  value: 0
+              actions_position:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6aca724555982
+              size:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6aca724555a18
+              border:
+                source_id: select
+                source:
+                  value: ''
+                node_id: 6aca724555aad
+              url:
+                source_id: url
+                source:
+                  value: null
+                node_id: 6aca724555b52
+            slots:
+              image:
+                sources:
+                  -
+                    node_id: b6f12171308f12bf
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:field_media_image'
+                      'field:node:article:field_media_image':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:field_media_image'
+                              source:
+                                type: entity_reference_entity_view
+                                settings:
+                                  view_mode: responsive_3x2
+                              node_id: ''
+                              _weight: '0'
+                              third_party_settings: {  }
+                    third_party_settings: {  }
+              title:
+                sources:
+                  -
+                    node_id: a35a38eaf0ec2eaf
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:article:title'
+                      'field:node:article:title':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:article:title'
+                              source:
+                                type: string
+                                settings:
+                                  link_to_entity: '1'
+                                  link_rel: canonical
+                              node_id: ''
+                              _weight: '0'
+                              third_party_settings: {  }
+        third_party_settings: {  }
+id: node.article.card_common
+targetEntityType: node
+bundle: article
+mode: card_common
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive_3x2
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_body: true
+  field_tags: true
+  langcode: true
+  links: true
