@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'Watercress soup with a sprig of coriander as garnish in a white bowl with green trim'
@@ -31,3 +37,34 @@ default:
       width: 768
       height: 512
       entity: 27b62931-e62e-4791-916d-ea7926fb7abd
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Sopa de berro'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Sopa de berros con una ramita de cilantro como guarnición en un tazón blanco con borde verde.'
+        title: ''
+        width: 768
+        height: 512
+        entity: 62aa7ba0-874a-4545-b015-232a82ff90e2

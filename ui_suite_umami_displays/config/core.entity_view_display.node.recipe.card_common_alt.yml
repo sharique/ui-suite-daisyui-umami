@@ -1,0 +1,223 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.card_common_alt
+  - field.field.node.recipe.field_cooking_time
+  - field.field.node.recipe.field_difficulty
+  - field.field.node.recipe.field_ingredients
+  - field.field.node.recipe.field_media_image
+  - field.field.node.recipe.field_number_of_servings
+  - field.field.node.recipe.field_preparation_time
+  - field.field.node.recipe.field_recipe_category
+  - field.field.node.recipe.field_recipe_instruction
+  - field.field.node.recipe.field_summary
+  - field.field.node.recipe.field_tags
+  - node.type.recipe
+  module:
+  - display_builder
+  - user
+id: node.recipe.card_common_alt
+targetEntityType: node
+bundle: recipe
+mode: card_common_alt
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: square
+      link: false
+    third_party_settings: {}
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_cooking_time: true
+  field_difficulty: true
+  field_ingredients: true
+  field_number_of_servings: true
+  field_preparation_time: true
+  field_recipe_category: true
+  field_recipe_instruction: true
+  field_summary: true
+  field_tags: true
+  langcode: true
+  links: true
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+    - node_id: b5c319ec9d99c10b
+      source_id: component
+      source:
+        component:
+          component_id: ui_suite_daisyui:card
+          variant_id:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6ac95caa6c2ab
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+              node_id: 6ac95caa6c415
+            heading_level:
+              source_id: select
+              source:
+                value: ''
+              node_id: 6ac95caa6c48c
+            image_bottom:
+              source_id: checkbox
+              source:
+                value: 0
+              node_id: 6ac95caa6c4e6
+            centered:
+              source_id: checkbox
+              node_id: 6ac95caa6c549
+              source:
+                value: 0
+            image_full:
+              source_id: checkbox
+              node_id: 6ac95caa6c5a0
+              source:
+                value: 0
+            actions_top:
+              source_id: checkbox
+              node_id: 6ac95caa6c5f7
+              source:
+                value: 0
+            actions_position:
+              source_id: select
+              source:
+                value: center
+              node_id: 6ac95caa6c64e
+            size:
+              source_id: select
+              source:
+                value: ''
+              node_id: 6ac95caa6c6ab
+            border:
+              source_id: select
+              source:
+                value: ''
+              node_id: 6ac95caa6c702
+            url:
+              source_id: url
+              source:
+                value: null
+              node_id: 6ac95caa6c760
+          slots:
+            image:
+              sources:
+              - node_id: 1de3bee52a2fa072
+                source_id: entity_field
+                source:
+                  derivable_context: field:node:recipe:field_media_image
+                  field:node:recipe:field_media_image:
+                    value:
+                      sources:
+                      - source_id: field_formatter:node:recipe:field_media_image
+                        source:
+                          type: entity_reference_entity_view
+                          label: hidden
+                          settings:
+                            view_mode: square
+                            link: false
+                          third_party_settings: {}
+                          weight: 1
+                          region: content
+                third_party_settings: {}
+            title:
+              sources:
+              - node_id: e347c81638bb407d
+                source_id: entity_field
+                source:
+                  derivable_context: field:node:recipe:title
+                  field:node:recipe:title:
+                    value:
+                      sources:
+                      - source_id: field_formatter:node:recipe:title
+                        source:
+                          type: string
+                          settings:
+                            link_to_entity: '1'
+                            link_rel: canonical
+                        node_id: ''
+                        _weight: '0'
+                        third_party_settings: {}
+            actions:
+              sources: {}
+            text:
+              sources:
+              - source_id: entity_field
+                source:
+                  derivable_context: field:node:recipe:field_tags
+                  field:node:recipe:field_tags:
+                    value:
+                      sources:
+                      - source_id: field_formatter:node:recipe:field_tags
+                        source:
+                          type: ui_patterns_component_per_item
+                          label: hidden
+                          settings:
+                            ui_patterns:
+                              component_id: ui_suite_daisyui:badge
+                              variant_id: null
+                              props: {}
+                              slots:
+                                label:
+                                  sources:
+                                  - source_id: icon_renderable
+                                    source:
+                                      value:
+                                        icon_id: hero_solid_16:tag
+                                    third_party_settings: {}
+                                  - source_id: field_formatter:node:recipe:field_tags
+                                    source:
+                                      type: entity_reference_label
+                                      settings:
+                                        link: false
+                                      third_party_settings: {}
+                                    node_id: ''
+                                    _weight: '0'
+                                    third_party_settings: {}
+                          third_party_settings: {}
+                          weight: 0
+                          region: content
+                        node_id: ''
+                        _weight: '0'
+                        third_party_settings: {}
+                third_party_settings: {}
+              - source_id: component
+                source:
+                  component:
+                    component_id: ui_suite_daisyui:badge
+                    variant_id: null
+                    props: {}
+                    slots:
+                      label:
+                        sources:
+                        - source_id: icon_renderable
+                          source:
+                            value:
+                              icon_id: hero_solid_16:clock
+                          third_party_settings: {}
+                        - source_id: field_formatter:node:recipe:field_cooking_time
+                          source:
+                            type: number_integer
+                            settings:
+                              prefix_suffix: true
+                              thousand_separator: ''
+                            third_party_settings: {}
+                          node_id: ''
+                          _weight: '0'
+                          third_party_settings: {}
+                third_party_settings: {}
+      third_party_settings:
+        styles:
+          selected:
+            colors_background_color: bg-base-100
+          extra: ''

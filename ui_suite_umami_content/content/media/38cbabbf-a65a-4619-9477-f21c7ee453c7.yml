@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'A traditional bowl of creamy, aromatic Thai green curry with chunks of chicken in a small bowl with jasmine rice'
@@ -31,3 +37,34 @@ default:
       width: 768
       height: 512
       entity: 5e07e35c-515f-4f27-af3f-f784c780a042
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Curry verde tailandés'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Un tazón tradicional de curry verde tailandés aromático y cremoso, con trozos de pollo y verduras.'
+        title: ''
+        width: 768
+        height: 512
+        entity: 235f7261-4661-4698-98fa-ed8a4d1a80cf

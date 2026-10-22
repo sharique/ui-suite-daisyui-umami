@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'A stack of chocolate and pecan brownies, sprinkled with pecan crumbs and crushed walnut, fresh out of the oven'
@@ -31,3 +37,34 @@ default:
       width: 770
       height: 512
       entity: 77b63a1d-4e6b-4441-9fc8-180b432c7cd8
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Bizcochos veganos de chocolate y nueces'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Una pila de brownies de chocolate y nuez, rociados con migas de nuez y nuez triturada, recién sacados del horno'
+        title: ''
+        width: 770
+        height: 512
+        entity: 54439861-d86f-433f-aa93-98543b7d0554

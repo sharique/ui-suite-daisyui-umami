@@ -15,6 +15,7 @@ install:
   - ui_suite_daisyui
 recipes:
   - ui_suite_umami_content_model
+  - ui_suite_umami_multilingual
   - ui_suite_umami_displays
   - ui_suite_umami_content
 config:
@@ -50,11 +51,11 @@ config:
               color-neutral-content:
                 ":root": "#fbf5ee"
               color-base-100:
-                ":root": "#fbf5ee"
+                ":root": "#ffffff"
               color-base-200:
-                ":root": "#e6eee0"
+                ":root": "#fbf5ee"
               color-base-300:
-                ":root": "#cccccc"
+                ":root": "#e6eee0"
               color-base-content:
                 ":root": "#464646"
               color-info:

@@ -64,21 +64,21 @@ color-base-100:
   label: "Base color of page, used for blank backgrounds"
   type: textfield
   default_values:
-    ":root": "#fbf5ee"
+    ":root": "#ffffff"
 
 color-base-200:
   category: "Colors"
   label: "Base color, darker shade"
   type: textfield
   default_values:
-    ":root": "#e6eee0"
+    ":root": "#fbf5ee"
 
 color-base-300:
   category: "Colors"
   label: "Base color, even more darker shade"
   type: textfield
   default_values:
-    ":root": "#cccccc"
+    ":root": "#e6eee0"
 
 color-base-content:
   category: "Colors"

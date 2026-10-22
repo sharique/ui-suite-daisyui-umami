@@ -1,0 +1,27 @@
+name: 'UI Suite Umami: multilingual'
+description: 'English and Spanish: language negotiation and content translation settings from the Umami demo profile.'
+type: 'Site'
+install:
+  - language
+  - locale
+  - config_translation
+  - content_translation
+recipes:
+  - ui_suite_umami_content_model
+config:
+  # The recipe installs language, but not the module's own default config, so
+  # the locked languages (und, zxx) must be imported for Spanish to be added.
+  strict: false
+  import:
+    language:
+      - language.entity.en
+      - language.entity.und
+      - language.entity.zxx
+      - language.mappings
+  actions:
+    user.role.editor:
+      grantPermissions:
+        - 'create content translations'
+        - 'delete content translations'
+        - 'translate any entity'
+        - 'update content translations'

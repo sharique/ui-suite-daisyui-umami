@@ -1,0 +1,295 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.full
+  - field.field.node.article.field_body
+  - field.field.node.article.field_media_image
+  - field.field.node.article.field_tags
+  - node.type.article
+  module:
+  - display_builder
+  - text
+  - user
+id: node.article.full
+targetEntityType: node
+bundle: article
+mode: full
+content:
+  content_moderation_control:
+    settings: {}
+    third_party_settings: {}
+    weight: 5
+    region: content
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {}
+    third_party_settings: {}
+    weight: 3
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive_3x2
+      link: false
+    third_party_settings: {}
+    weight: 2
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 0
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 4
+    region: content
+hidden:
+  langcode: true
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+    - node_id: ap0000000000000e
+      source_id: component
+      source:
+        component:
+          component_id: ui_suite_daisyui:grid_2_regions
+          props:
+            col_span:
+              source_id: selects
+              source:
+                value:
+                - 12
+                - 12
+            col_span_lg:
+              source_id: selects
+              source:
+                value:
+                - 8
+                - 4
+            gap:
+              source_id: select
+              source:
+                value: '8'
+          slots:
+            col_first:
+              sources:
+              - node_id: ap0000000000000b
+                source_id: component
+                source:
+                  component:
+                    component_id: ui_suite_daisyui:grid_1_region
+                    props:
+                      container_type:
+                        source_id: select
+                        source:
+                          value: container mx-auto
+                    slots:
+                      col_first:
+                        sources:
+                        - node_id: ap00000000000005
+                          source_id: component
+                          source:
+                            component:
+                              component_id: ui_suite_daisyui:prose
+                              props: {}
+                              slots:
+                                content:
+                                  sources:
+                                  - node_id: ap00000000000001
+                                    source_id: textfield
+                                    source:
+                                      value: 'By '
+                                    third_party_settings:
+                                      styles:
+                                        selected: {}
+                                        extra: ''
+                                  - node_id: ap00000000000002
+                                    source_id: entity_field
+                                    source:
+                                      derivable_context: field:node:article:uid
+                                      field:node:article:uid:
+                                        value:
+                                          sources:
+                                          - source_id: field_formatter:node:article:uid
+                                            source:
+                                              type: author
+                                              label: hidden
+                                              settings: {}
+                                              third_party_settings: {}
+                                              weight: 0
+                                              region: content
+                                            node_id: ''
+                                            _weight: '0'
+                                            third_party_settings: {}
+                                    third_party_settings: {}
+                                  - node_id: ap00000000000003
+                                    source_id: textfield
+                                    source:
+                                      value: ' on '
+                                    third_party_settings:
+                                      styles:
+                                        selected: {}
+                                        extra: ''
+                                  - node_id: ap00000000000004
+                                    source_id: entity_field
+                                    source:
+                                      derivable_context: field:node:article:created
+                                      field:node:article:created:
+                                        value:
+                                          sources:
+                                          - source_id: field_formatter:node:article:created
+                                            source:
+                                              type: timestamp
+                                              label: hidden
+                                              settings:
+                                                date_format: umami_dates
+                                              third_party_settings: {}
+                                              weight: 0
+                                              region: content
+                                            node_id: ''
+                                            _weight: '0'
+                                            third_party_settings: {}
+                                    third_party_settings: {}
+                          third_party_settings:
+                            styles:
+                              selected: {}
+                              extra: ''
+                        - node_id: ap00000000000007
+                          source_id: component
+                          source:
+                            component:
+                              component_id: ui_suite_daisyui:prose
+                              props: {}
+                              slots:
+                                content:
+                                  sources:
+                                  - node_id: ap00000000000006
+                                    source_id: entity_field
+                                    source:
+                                      derivable_context: field:node:article:field_tags
+                                      field:node:article:field_tags:
+                                        value:
+                                          sources:
+                                          - source_id: field_formatter:node:article:field_tags
+                                            source:
+                                              type: ui_patterns_component_per_item
+                                              label: hidden
+                                              settings:
+                                                ui_patterns:
+                                                  component_id: ui_suite_daisyui:badge
+                                                  variant_id: null
+                                                  props: {}
+                                                  slots:
+                                                    label:
+                                                      sources:
+                                                      - source_id: icon_renderable
+                                                        source:
+                                                          value:
+                                                            icon_id: hero_solid_16:tag
+                                                        third_party_settings: {}
+                                                      - source_id: field_formatter:node:article:field_tags
+                                                        source:
+                                                          type: entity_reference_label
+                                                          settings:
+                                                            link: true
+                                                          third_party_settings: {}
+                                                        node_id: ''
+                                                        _weight: '0'
+                                                        third_party_settings: {}
+                                              third_party_settings: {}
+                                              weight: 0
+                                              region: content
+                                            node_id: ''
+                                            _weight: '0'
+                                            third_party_settings: {}
+                                    third_party_settings: {}
+                          third_party_settings:
+                            styles:
+                              selected: {}
+                              extra: ''
+                        - node_id: ap00000000000008
+                          source_id: entity_field
+                          source:
+                            derivable_context: field:node:article:field_media_image
+                            field:node:article:field_media_image:
+                              value:
+                                sources:
+                                - source_id: field_formatter:node:article:field_media_image
+                                  source:
+                                    type: entity_reference_entity_view
+                                    label: hidden
+                                    settings:
+                                      view_mode: responsive_3x2
+                                      link: false
+                                    third_party_settings: {}
+                                    weight: 0
+                                    region: content
+                                  node_id: ''
+                                  _weight: '0'
+                                  third_party_settings: {}
+                          third_party_settings: {}
+                        - node_id: ap0000000000000a
+                          source_id: component
+                          source:
+                            component:
+                              component_id: ui_suite_daisyui:prose
+                              props: {}
+                              slots:
+                                content:
+                                  sources:
+                                  - node_id: ap00000000000009
+                                    source_id: entity_field
+                                    source:
+                                      derivable_context: field:node:article:field_body
+                                      field:node:article:field_body:
+                                        value:
+                                          sources:
+                                          - source_id: field_formatter:node:article:field_body
+                                            source:
+                                              type: text_default
+                                              label: hidden
+                                              settings: {}
+                                              third_party_settings: {}
+                                              weight: 0
+                                              region: content
+                                            node_id: ''
+                                            _weight: '0'
+                                            third_party_settings: {}
+                                    third_party_settings: {}
+                          third_party_settings:
+                            styles:
+                              selected: {}
+                              extra: ''
+                third_party_settings:
+                  styles:
+                    selected:
+                      colors_background_color: bg-base-100
+                    extra: p-10
+            col_second:
+              sources:
+              - node_id: ap0000000000000c
+                source_id: textfield
+                source:
+                  value: More featured articles
+                third_party_settings:
+                  styles:
+                    selected:
+                      typography_font_size: text-2xl
+                    extra: p-4
+              - node_id: ap0000000000000d
+                source_id: block
+                source:
+                  plugin_id: views_block:articles_aside-block_1
+                third_party_settings: {}
+      third_party_settings:
+        styles:
+          selected: {}
+          extra: ''

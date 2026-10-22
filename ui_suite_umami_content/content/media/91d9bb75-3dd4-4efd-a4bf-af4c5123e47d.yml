@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'Cheesy pasta dish with vegetarian sausages and topped with mozzarella cheese and basil'
@@ -31,3 +37,34 @@ default:
       width: 768
       height: 511
       entity: 88b238b3-2e3c-46b2-a228-419e19565d08
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Pasta vegetariana al horno súper fácil'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Plato de pasta con salchichas vegetarianas y cubierto con queso mozzarella y albahaca'
+        title: ''
+        width: 768
+        height: 511
+        entity: dc66b294-fea9-410c-b841-c0b493540b74

@@ -302,7 +302,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p class="text-align-center">Explore recipes across every type of occasion, ingredient, and skill level.</p>'
+            value: '<h2 style="text-align:center;font-size:1.5rem;padding:1.5rem 0">Explore recipes across every type of occasion, ingredient, and skill level</h2>'
             format: full_html
           tokenize: false
       footer: {  }

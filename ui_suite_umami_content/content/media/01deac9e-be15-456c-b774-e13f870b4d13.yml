@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'A delicious deep layered Mediterranean quiche with basil garnish'
@@ -31,3 +37,34 @@ default:
       width: 768
       height: 511
       entity: 13faeb88-d5bc-4e4f-8589-864a8ef43967
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Quiche mediterráneo profundo'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Un delicioso quiche mediterráneo de capas profundas con guarnición de albahaca.'
+        title: ''
+        width: 768
+        height: 511
+        entity: 986c80d0-962f-406e-a760-dbd158810ac9

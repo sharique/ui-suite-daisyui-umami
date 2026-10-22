@@ -5,20 +5,14 @@ _meta:
   default_langcode: en
 default:
   name:
-    -
-      value: 'Gregorio Sánchez'
+  - value: "Gregorio S\xE1nchez"
   timezone:
-    -
-      value: Europe/Berlin
+  - value: Europe/Berlin
   status:
-    -
-      value: true
+  - value: true
   access:
-    -
-      value: 0
+  - value: 0
   login:
-    -
-      value: 0
+  - value: 0
   roles:
-    -
-      target_id: author
+  - target_id: author

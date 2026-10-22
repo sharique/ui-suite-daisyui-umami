@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'A classic, uncut Victoria sponge with a deep filling of butter cream and jam'
@@ -31,3 +37,34 @@ default:
       width: 768
       height: 512
       entity: a7d6a47c-4e6c-4a71-bd95-07682c735fe9
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Pastel Victoria'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Una esponja Victoria clásica, sin cortar, con un relleno profundo de crema de mantequilla y mermelada'
+        title: ''
+        width: 768
+        height: 512
+        entity: f62d4b7b-b2f5-43b1-9b32-1eed9556662b

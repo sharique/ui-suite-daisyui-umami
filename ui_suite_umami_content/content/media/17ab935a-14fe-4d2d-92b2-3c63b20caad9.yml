@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'Traditional Ukrainian soup with beets, tomatoes, and pork ribs'
@@ -31,3 +37,34 @@ default:
       width: 768
       height: 512
       entity: 7ae0b6e7-2851-496e-b4a0-fc88c7425cc7
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Borscht con costillas de cerdo'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Sopa tradicional ucraniana de remolacha, tomates y costillas de cerdo'
+        title: ''
+        width: 768
+        height: 512
+        entity: a1fd282f-7e82-48e2-9743-15f00ff361cf

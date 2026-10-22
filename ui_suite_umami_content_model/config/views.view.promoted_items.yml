@@ -389,8 +389,13 @@ display:
         groups:
           1: AND
       style:
-        type: default
-        options: {  }
+        type: grid_responsive
+        options:
+          alignment: horizontal
+          cell_min_width: 240
+          columns: 2
+          grid_gutter: 14
+          uses_fields: false
       row:
         type: 'entity:node'
         options:

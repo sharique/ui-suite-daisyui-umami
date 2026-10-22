@@ -20,6 +20,15 @@ default:
   revision_translation_affected:
     -
       value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 0
   field_content_link:
     -
       title: 'View recipe'
@@ -34,3 +43,40 @@ default:
   field_title:
     -
       value: 'Vegan chocolate and nut brownies'
+translations:
+  es:
+    status:
+      -
+        value: true
+    info:
+      -
+        value: 'Umami Recetas Pancarta'
+    reusable:
+      -
+        value: true
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_id: 0
+    field_content_link:
+      -
+        uri: 'internal:/es/recipes/bizcochos-veganos-de-chocolate-y-nueces'
+        title: 'Ver receta'
+        options: {  }
+    field_media_image:
+      -
+        entity: 5531eeab-0ead-45cb-8c99-c9407fe4e454
+    field_summary:
+      -
+        value: 'Estos exquisitos brownies quedarán sabrosos por dentro y crujientes por fuera. ¡La tentación perfecta!'
+    field_title:
+      -
+        value: 'Brownies Veganos de Chocolate y Nuez'

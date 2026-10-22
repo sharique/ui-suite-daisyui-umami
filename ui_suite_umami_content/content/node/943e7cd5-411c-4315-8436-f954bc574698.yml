@@ -36,6 +36,12 @@ default:
     -
       alias: /recipes/crema-catalana
       langcode: en
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_cooking_time:
     -
       value: 20
@@ -89,3 +95,91 @@ default:
       entity: bbfac831-3c36-4f41-a9e2-f491f8e6ebd6
     -
       entity: 1cda4745-41d0-427c-9619-cbe71d4696b2
+translations:
+  es:
+    revision_uid:
+      -
+        entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+    status:
+      -
+        value: true
+    uid:
+      -
+        entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+    title:
+      -
+        value: 'Crema catalana'
+    promote:
+      -
+        value: true
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    moderation_state:
+      -
+        value: published
+    path:
+      -
+        alias: /recipes/crema-catalana
+        langcode: es
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_cooking_time:
+      -
+        value: 20
+    field_difficulty:
+      -
+        value: medium
+    field_ingredients:
+      -
+        value: '1l de Leche'
+      -
+        value: ' 200g de azúcar'
+      -
+        value: ' 6 yemas de huevo'
+      -
+        value: ' 30g de Maizena'
+      -
+        value: ' 1 rama de canela'
+      -
+        value: ' 1 La piel de un limón'
+    field_media_image:
+      -
+        entity: d8400854-15ea-43e5-aba8-c12c25231580
+    field_number_of_servings:
+      -
+        value: 8
+    field_preparation_time:
+      -
+        value: 10
+    field_recipe_category:
+      -
+        entity: 309a9864-fdc7-4f1a-a3b4-a74ebd2829ac
+    field_recipe_instruction:
+      -
+        value: |
+          <ol>
+            <li>Mezcle las yemas de huevo, el azúcar y la harina de maiz con ⅓ de la leche. En un cazo, hierve el resto de la leche con la ralladura de un limón y la canela.</li>
+            <li>Después de 3 minutos, aparte del fuego y quite el limón y la canela.</li>
+            <li>Ve añadiendo muy despacio la mezcla del huevo sobre la leche utilizando un colador para asegurarse que no hay grumos.</li>
+            <li>Coloque el cazo otra vez en el fuego y, sin dejar de remover, espere hasta que hierva.</li>
+            <li>Una vez que la mezcla ha empezado a espesar, apártalo del fuego y ponlo en recipientes individuales para que enfríe.</li>
+            <li>Para un resultado auténtico, esparza un poco de azúcar y caramelízalo con un soplete de cocina o bajo el gratinador del horno.</li>
+          </ol>
+        format: basic_html
+    field_summary:
+      -
+        value: 'Disfruta de esta dulce receta de uno de los postres más antiguos de Europa. ¡Requiere muy pocos ingredientes!'
+        format: basic_html
+    field_tags:
+      -
+        entity: bbfac831-3c36-4f41-a9e2-f491f8e6ebd6
+      -
+        entity: 1cda4745-41d0-427c-9619-cbe71d4696b2

@@ -3,3 +3,4 @@ description: 'Umami demo content: terms, media, recipes, articles, pages, custom
 type: 'Content'
 recipes:
   - ui_suite_umami_content_model
+  - ui_suite_umami_multilingual

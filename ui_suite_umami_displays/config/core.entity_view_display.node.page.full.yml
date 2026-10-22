@@ -1,0 +1,89 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.full
+  - field.field.node.page.field_body
+  - node.type.page
+  module:
+  - display_builder
+  - text
+  - user
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  content_moderation_control:
+    settings: {}
+    third_party_settings: {}
+    weight: 2
+    region: content
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {}
+    third_party_settings: {}
+    weight: 0
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+    - node_id: ap00000000000011
+      source_id: component
+      source:
+        component:
+          component_id: ui_suite_daisyui:grid_1_region
+          props:
+            container_type:
+              source_id: select
+              source:
+                value: container mx-auto
+          slots:
+            col_first:
+              sources:
+              - node_id: ap00000000000010
+                source_id: component
+                source:
+                  component:
+                    component_id: ui_suite_daisyui:prose
+                    props: {}
+                    slots:
+                      content:
+                        sources:
+                        - node_id: ap0000000000000f
+                          source_id: entity_field
+                          source:
+                            derivable_context: field:node:page:field_body
+                            field:node:page:field_body:
+                              value:
+                                sources:
+                                - source_id: field_formatter:node:page:field_body
+                                  source:
+                                    type: text_default
+                                    label: hidden
+                                    settings: {}
+                                    third_party_settings: {}
+                                    weight: 0
+                                    region: content
+                                  node_id: ''
+                                  _weight: '0'
+                                  third_party_settings: {}
+                          third_party_settings: {}
+                third_party_settings:
+                  styles:
+                    selected: {}
+                    extra: ''
+      third_party_settings:
+        styles:
+          selected:
+            colors_background_color: bg-base-100
+          extra: p-10

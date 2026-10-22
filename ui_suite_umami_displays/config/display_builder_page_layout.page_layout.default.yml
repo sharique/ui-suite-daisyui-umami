@@ -1,452 +1,527 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies: {}
 id: default
 label: Default
 weight: 0
-conditions: {  }
+conditions: {}
 profile: default
 sources:
-  -
-    node_id: 7995f9956404635d
-    source_id: component
-    source:
-      component:
-        component_id: 'ui_suite_daisyui:navbar'
-        slots:
-          start:
-            sources:
-              -
-                node_id: ebe00a814e7f08d2
-                source_id: block
-                source:
-                  plugin_id: system_branding_block
-          center:
-            sources:
-              -
-                node_id: c35006c46e541351
-                source_id: block
-                source:
-                  plugin_id: 'system_menu_block:main'
-          end:
-            sources:
-              -
-                node_id: 80fe7efc155c1074
-                source_id: block
-                source:
-                  plugin_id: 'system_menu_block:account'
-    third_party_settings: {  }
-  -
-    node_id: 9d1e95831d7e2fc5
-    source_id: block
-    source:
-      plugin_id: system_breadcrumb_block
-      system_breadcrumb_block: {  }
-    third_party_settings: {  }
-  -
-    node_id: c4060a7f895c3891
-    source_id: block
-    source:
-      plugin_id: system_messages_block
-      system_messages_block: {  }
-    third_party_settings: {  }
-  -
-    node_id: d2c28b615efabe88
-    source_id: block
-    source:
-      plugin_id: local_tasks_block
-      local_tasks_block:
-        primary: true
-        secondary: true
-    third_party_settings: {  }
-  -
-    node_id: e14f5523e648b3ea
-    source_id: block
-    source:
-      plugin_id: local_actions_block
-      local_actions_block: {  }
-    third_party_settings: {  }
-  -
-    node_id: 77a7811503567e54
-    source_id: component
-    source:
-      component:
-        component_id: 'ui_suite_daisyui:grid_1_region'
-        variant_id: null
-        props:
-          attributes:
-            source_id: attributes
+- node_id: 7995f9956404635d
+  source_id: component
+  source:
+    component:
+      component_id: ui_suite_daisyui:navbar
+      slots:
+        start:
+          sources:
+          - node_id: ebe00a814e7f08d2
+            source_id: block
             source:
-              value: ''
-            node_id: 6ac95ee613cae
-          container_type:
-            source_id: select
+              plugin_id: system_branding_block
+              system_branding_block:
+                id: system_branding_block
+                label: ''
+                label_display: '0'
+                provider: system
+                use_site_logo: false
+                use_site_name: true
+                use_site_slogan: false
+        center:
+          sources:
+          - node_id: c35006c46e541351
+            source_id: block
             source:
-              value: 'container mx-auto'
-            node_id: 6ac95ee613d12
-          background_image:
-            source_id: url
+              plugin_id: system_menu_block:main
+        end:
+          sources:
+          - node_id: langswitch0000001
+            source_id: block
             source:
-              value: null
-            node_id: 6ac95ee613d6b
-          background_size:
-            source_id: select
+              plugin_id: language_block:language_interface
+            third_party_settings: {}
+          - node_id: 80fe7efc155c1074
+            source_id: block
             source:
-              value: ''
-            node_id: 6ac95ee613dc4
-          background_position:
-            source_id: select
+              plugin_id: system_menu_block:account
+  third_party_settings:
+    styles:
+      selected: {}
+      extra: container mx-auto
+- node_id: c4060a7f895c3891
+  source_id: block
+  source:
+    plugin_id: system_messages_block
+    system_messages_block: {}
+  third_party_settings: {}
+- node_id: d2c28b615efabe88
+  source_id: block
+  source:
+    plugin_id: local_tasks_block
+    local_tasks_block:
+      primary: true
+      secondary: true
+  third_party_settings: {}
+- node_id: e14f5523e648b3ea
+  source_id: block
+  source:
+    plugin_id: local_actions_block
+    local_actions_block: {}
+  third_party_settings: {}
+- node_id: 516c71db85004523
+  source_id: component
+  source:
+    component:
+      component_id: ui_suite_daisyui:grid_1_region
+      variant_id: null
+      props:
+        attributes:
+          source_id: attributes
+          source:
+            value: ''
+          node_id: 6aca78b4d86cd
+        container_type:
+          source_id: select
+          source:
+            value: bg-breakout
+          node_id: 6aca78b4d8775
+        background_image:
+          source_id: url
+          source:
+            value: null
+          node_id: 6aca78b4d880f
+        background_size:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d88ba
+        background_position:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d8956
+        background_repeat:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d89ed
+        col_span:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d8a85
+        col_start:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d8b1a
+        col_span_lg:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d8bb1
+        col_start_lg:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d8c47
+        col_span_md:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d8ced
+        col_start_md:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d8d84
+        col_span_sm:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d8e1a
+        col_start_sm:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6aca78b4d8eb0
+      slots:
+        col_first:
+          sources:
+          - node_id: 9d1e95831d7e2fc5
+            source_id: block
             source:
-              value: ''
-            node_id: 6ac95ee613e1b
-          background_repeat:
-            source_id: select
+              plugin_id: system_breadcrumb_block
+              system_breadcrumb_block: {}
+            third_party_settings:
+              styles:
+                selected: {}
+                extra: p-4
+          - node_id: pagetitle00000001
+            source_id: page_title
+            source: {}
+            third_party_settings:
+              styles:
+                selected:
+                  typography_font_size: text-3xl
+                extra: p-4
+          - node_id: 59dfc35cda334646
+            source_id: main_page_content
+            source: {}
+            third_party_settings:
+              styles:
+                selected: {}
+                extra: p-4
+  third_party_settings:
+    styles:
+      selected:
+        colors_background_color: bg-base-200
+      extra: ''
+- node_id: bandcollections01
+  source_id: component
+  source:
+    component:
+      component_id: ui_suite_daisyui:grid_1_region
+      variant_id: null
+      props:
+        attributes:
+          source_id: attributes
+          source:
+            value: ''
+          node_id: c6aca78b4d86cd
+        container_type:
+          source_id: select
+          source:
+            value: bg-breakout
+          node_id: c6aca78b4d8775
+        background_image:
+          source_id: url
+          source:
+            value: null
+          node_id: c6aca78b4d880f
+        background_size:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d88ba
+        background_position:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d8956
+        background_repeat:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d89ed
+        col_span:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d8a85
+        col_start:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d8b1a
+        col_span_lg:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d8bb1
+        col_start_lg:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d8c47
+        col_span_md:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d8ced
+        col_start_md:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d8d84
+        col_span_sm:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d8e1a
+        col_start_sm:
+          source_id: select
+          source:
+            value: ''
+          node_id: c6aca78b4d8eb0
+      slots:
+        col_first:
+          sources:
+          - node_id: c5c132e860fd5f24a
+            source_id: block
             source:
-              value: ''
-            node_id: 6ac95ee613e72
-          col_span:
-            source_id: select
+              plugin_id: views_block:recipe_collections-block
+              views_block:recipe_collections-block:
+                id: views_block:recipe_collections-block
+                label: Recipe collections
+                label_display: '1'
+                provider: views
+                views_label: Recipe collections
+                items_per_page: null
+            third_party_settings:
+              styles:
+                selected: {}
+                extra: p-4
+  third_party_settings:
+    styles:
+      selected:
+        colors_background_color: bg-neutral
+        colors_text_color: text-neutral-content
+      extra: ''
+- node_id: 4366a752f42d668e
+  source_id: component
+  source:
+    component:
+      component_id: ui_suite_daisyui:grid_1_region
+      variant_id: null
+      props:
+        attributes:
+          source_id: attributes
+          source:
+            value: ''
+          node_id: 6ac94c6adaaab
+        container_type:
+          source_id: select
+          source:
+            value: bg-breakout
+          node_id: 6ac94c6adab12
+        background_image:
+          source_id: url
+          source:
+            value: null
+          node_id: 6ac94c6adab6b
+        background_size:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adabc4
+        background_position:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adac1c
+        background_repeat:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adac78
+        col_span:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adaccf
+        col_start:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adad25
+        col_span_lg:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adad7c
+        col_start_lg:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adadd3
+        col_span_md:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adae2a
+        col_start_md:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adae81
+        col_span_sm:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adaed7
+        col_start_sm:
+          source_id: select
+          source:
+            value: ''
+          node_id: 6ac94c6adaf32
+      slots:
+        col_first:
+          sources:
+          - node_id: 9d2af1c99e0172d8
+            source_id: component
             source:
-              value: ''
-            node_id: 6ac95ee613ec9
-          col_start:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac95ee613f1f
-          col_span_lg:
-            source_id: select
-            source:
-              value: '12'
-            node_id: 6ac95ee613f75
-          col_start_lg:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac95ee613fcb
-          col_span_md:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac95ee614022
-          col_start_md:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac95ee614082
-          col_span_sm:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac95ee6140da
-          col_start_sm:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac95ee614130
-        slots:
-          col_first:
-            sources:
-              -
-                node_id: db5ee5a7adf23220
-                source_id: block
-                source:
-                  plugin_id: 'block_content:9aadf4a1-ded6-4017-a10d-a5e043396edf'
-                third_party_settings: {  }
-              -
-                node_id: 1bc99f32bf73ccd9
-                source_id: component
-                source:
-                  component:
-                    component_id: 'ui_suite_daisyui:grid_1_region'
-              -
-                node_id: 8fee48bd6d929eba
-                source_id: block
-                source:
-                  plugin_id: 'views_block:promoted_items-block_1'
-                third_party_settings: {  }
-    third_party_settings:
-      styles:
-        selected:
-          sizing_width: w-4/5
-        extra: ''
-  -
-    node_id: 516c71db85004523
-    source_id: component
-    source:
-      component:
-        component_id: 'ui_suite_daisyui:grid_1_region'
-        variant_id: null
-        props:
-          attributes:
-            source_id: attributes
-            source:
-              value: ''
-            node_id: 6aca78b4d86cd
-          container_type:
-            source_id: select
-            source:
-              value: 'container mx-auto'
-            node_id: 6aca78b4d8775
-          background_image:
-            source_id: url
-            source:
-              value: null
-            node_id: 6aca78b4d880f
-          background_size:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d88ba
-          background_position:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d8956
-          background_repeat:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d89ed
-          col_span:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d8a85
-          col_start:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d8b1a
-          col_span_lg:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d8bb1
-          col_start_lg:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d8c47
-          col_span_md:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d8ced
-          col_start_md:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d8d84
-          col_span_sm:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d8e1a
-          col_start_sm:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6aca78b4d8eb0
-        slots:
-          col_first:
-            sources:
-              -
-                node_id: 59dfc35cda334646
-                source_id: main_page_content
-                source: {  }
-                third_party_settings:
-                  styles:
-                    selected: {  }
-                    extra: 'container mx-auto p-4'
-              -
-                node_id: 5c132e860fd5f24a
-                source_id: block
-                source:
-                  plugin_id: 'views_block:recipe_collections-block'
-                  'views_block:recipe_collections-block':
-                    id: 'views_block:recipe_collections-block'
-                    label: 'Recipe collections'
-                    label_display: '1'
-                    provider: views
-                    views_label: 'Recipe collections'
-                    items_per_page: null
-                third_party_settings:
-                  styles:
-                    selected:
-                      colors_background_color: bg-base-300
-                      colors_text_color: text-primary-content
-                    extra: 'container mx-auto p-4'
-    third_party_settings:
-      styles:
-        selected: {  }
-        extra: ''
-  -
-    node_id: 4366a752f42d668e
-    source_id: component
-    source:
-      component:
-        component_id: 'ui_suite_daisyui:grid_1_region'
-        variant_id: null
-        props:
-          attributes:
-            source_id: attributes
-            source:
-              value: ''
-            node_id: 6ac94c6adaaab
-          container_type:
-            source_id: select
-            source:
-              value: 'container mx-auto'
-            node_id: 6ac94c6adab12
-          background_image:
-            source_id: url
-            source:
-              value: null
-            node_id: 6ac94c6adab6b
-          background_size:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adabc4
-          background_position:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adac1c
-          background_repeat:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adac78
-          col_span:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adaccf
-          col_start:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adad25
-          col_span_lg:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adad7c
-          col_start_lg:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adadd3
-          col_span_md:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adae2a
-          col_start_md:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adae81
-          col_span_sm:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adaed7
-          col_start_sm:
-            source_id: select
-            source:
-              value: ''
-            node_id: 6ac94c6adaf32
-        slots:
-          col_first:
-            sources:
-              -
-                node_id: 9d2af1c99e0172d8
-                source_id: component
-                source:
-                  component:
-                    component_id: 'ui_suite_daisyui:footer'
-                    variant_id:
-                      source_id: select
+              component:
+                component_id: ui_suite_daisyui:footer
+                variant_id:
+                  source_id: select
+                  source:
+                    value: default
+                  node_id: 6ac94593b47c6
+                props:
+                  attributes:
+                    source_id: attributes
+                    source:
+                      value: ''
+                    node_id: 6ac94593b489f
+                  links:
+                    source_id: menu
+                    source:
+                      menu: footer
+                      level: '1'
+                      depth: '0'
+                      expand_all_items: '1'
+                      set_active_trail: 0
+                    node_id: 6ac94593b4900
+                  links_break:
+                    source_id: number
+                    source:
+                      value: ''
+                    node_id: 6ac94593b492a
+                  social_title:
+                    source_id: textfield
+                    source:
+                      value: ''
+                    node_id: 6ac94593b4983
+                  heading_level:
+                    source_id: select
+                    source:
+                      value: ''
+                    node_id: 6ac94593b49df
+                slots:
+                  aside:
+                    sources:
+                    - node_id: edcdefe9d84e28c0
+                      source_id: block
                       source:
-                        value: default
-                      node_id: 6ac94593b47c6
-                    props:
-                      attributes:
-                        source_id: attributes
-                        source:
-                          value: ''
-                        node_id: 6ac94593b489f
-                      links:
-                        source_id: menu
-                        source:
-                          menu: footer
-                          level: '1'
-                          depth: '0'
-                          expand_all_items: '1'
-                          set_active_trail: 0
-                        node_id: 6ac94593b4900
-                      links_break:
-                        source_id: number
-                        source:
-                          value: ''
-                        node_id: 6ac94593b492a
-                      social_title:
-                        source_id: textfield
-                        source:
-                          value: ''
-                        node_id: 6ac94593b4983
-                      heading_level:
-                        source_id: select
-                        source:
-                          value: ''
-                        node_id: 6ac94593b49df
-                    slots:
-                      aside:
-                        sources:
-                          -
-                            node_id: edcdefe9d84e28c0
-                            source_id: block
-                            source:
-                              plugin_id: 'block_content:924ab293-8f5f-45a1-9c7f-2423ae61a241'
-                              'block_content:924ab293-8f5f-45a1-9c7f-2423ae61a241':
-                                id: 'block_content:924ab293-8f5f-45a1-9c7f-2423ae61a241'
-                                label: 'Umami footer promo'
-                                label_display: '1'
-                                provider: block_content
-                                view_mode: full
-                            third_party_settings:
-                              styles:
-                                selected: {  }
-                                extra: ''
-                      social:
-                        sources:
-                          -
-                            node_id: 4f0a05aa089afeea
-                            source_id: block
-                            source:
-                              plugin_id: 'system_menu_block:footer'
-                third_party_settings:
-                  styles:
-                    selected:
-                      colors_background_color: bg-base-300
-                    extra: 'container mx-auto p-10'
-              -
-                node_id: 395ac6dc79b71105
-                source_id: block
-                source:
-                  plugin_id: 'block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29de'
-                third_party_settings:
-                  styles:
-                    selected:
-                      colors_background_color: bg-neutral
-                      colors_text_color: text-primary-content
-                    extra: 'container mx-auto p-4'
-    third_party_settings:
-      styles:
-        selected:
-          colors_background_color: bg-neutral
-          colors_text_color: text-primary-content
-        extra: ''
+                        plugin_id: block_content:924ab293-8f5f-45a1-9c7f-2423ae61a241
+                        block_content:924ab293-8f5f-45a1-9c7f-2423ae61a241:
+                          id: block_content:924ab293-8f5f-45a1-9c7f-2423ae61a241
+                          label: Umami footer promo
+                          label_display: '1'
+                          provider: block_content
+                          view_mode: full
+                      third_party_settings:
+                        styles:
+                          selected: {}
+                          extra: ''
+                  social:
+                    sources:
+                    - node_id: 4f0a05aa089afeea
+                      source_id: block
+                      source:
+                        plugin_id: system_menu_block:footer
+            third_party_settings:
+              styles:
+                selected: {}
+                extra: p-10
+  third_party_settings:
+    styles:
+      selected:
+        colors_background_color: bg-base-300
+        colors_text_color: text-base-content
+      extra: ''
+- node_id: disclaimerband01
+  source_id: component
+  source:
+    component:
+      component_id: ui_suite_daisyui:grid_1_region
+      variant_id: null
+      props:
+        attributes:
+          source_id: attributes
+          source:
+            value: ''
+          node_id: d6ac94c6adaaab
+        container_type:
+          source_id: select
+          source:
+            value: bg-breakout
+          node_id: d6ac94c6adab12
+        background_image:
+          source_id: url
+          source:
+            value: null
+          node_id: d6ac94c6adab6b
+        background_size:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adabc4
+        background_position:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adac1c
+        background_repeat:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adac78
+        col_span:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adaccf
+        col_start:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adad25
+        col_span_lg:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adad7c
+        col_start_lg:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adadd3
+        col_span_md:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adae2a
+        col_start_md:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adae81
+        col_span_sm:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adaed7
+        col_start_sm:
+          source_id: select
+          source:
+            value: ''
+          node_id: d6ac94c6adaf32
+      slots:
+        col_first:
+          sources:
+          - node_id: d395ac6dc79b71105
+            source_id: block
+            source:
+              plugin_id: block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29de
+            third_party_settings:
+              styles:
+                selected: {}
+                extra: p-4
+  third_party_settings:
+    styles:
+      selected:
+        colors_background_color: bg-neutral
+        colors_text_color: text-neutral-content
+      extra: ''

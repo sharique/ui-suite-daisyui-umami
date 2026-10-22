@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'Fresh mojito mocktail with garnish of mint leaves, ice, and sliced lime'
@@ -31,3 +37,34 @@ default:
       width: 768
       height: 512
       entity: 7bd841e3-c168-4b6d-9735-7b93fbcd7a94
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Salta los espíritus con deliciosos cócteles sin alcohol'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Mocktail de mojito fresco con guarnición de hojas de menta, hielo y lima en rodajas'
+        title: ''
+        width: 768
+        height: 512
+        entity: f470414f-8357-4e4d-b024-70ca29916df6

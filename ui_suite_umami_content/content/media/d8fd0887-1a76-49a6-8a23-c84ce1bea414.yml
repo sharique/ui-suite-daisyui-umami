@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: '3 issue bundle of the Umami food magazine'
@@ -31,3 +37,34 @@ default:
       width: 266
       height: 236
       entity: 8194bf9e-eef9-45bc-b5e4-e705cc780210
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Paquete de 3 ediciones de la revista de comida Umami'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Paquete de 3 ediciones de la revista de comida Umami'
+        title: ''
+        width: 266
+        height: 236
+        entity: 4288469f-de08-4358-a79a-3f2d4bab7429

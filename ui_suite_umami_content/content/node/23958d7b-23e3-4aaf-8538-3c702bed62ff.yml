@@ -36,6 +36,12 @@ default:
     -
       alias: /recipes/watercress-soup
       langcode: en
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_cooking_time:
     -
       value: 20
@@ -87,3 +93,90 @@ default:
       entity: 46d48123-d90e-4459-8b46-febfa10330b9
     -
       entity: 1cda4745-41d0-427c-9619-cbe71d4696b2
+translations:
+  es:
+    revision_uid:
+      -
+        entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+    status:
+      -
+        value: true
+    uid:
+      -
+        entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+    title:
+      -
+        value: 'Sopa de berro'
+    promote:
+      -
+        value: true
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    moderation_state:
+      -
+        value: published
+    path:
+      -
+        alias: /recipes/sopa-de-berro
+        langcode: es
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_cooking_time:
+      -
+        value: 20
+    field_difficulty:
+      -
+        value: easy
+    field_ingredients:
+      -
+        value: '3 racimos de berros'
+      -
+        value: '3 patatas'
+      -
+        value: '3 cebollas'
+      -
+        value: '2 puerros'
+      -
+        value: '800ml de caldo'
+      -
+        value: '75g de crème fraîche'
+    field_media_image:
+      -
+        entity: a3f3f081-1a6a-4a5a-a35c-363317972773
+    field_number_of_servings:
+      -
+        value: 4
+    field_preparation_time:
+      -
+        value: 10
+    field_recipe_category:
+      -
+        entity: 890c4952-9163-4ef4-858c-053fd5358df5
+    field_recipe_instruction:
+      -
+        value: |
+          <ol>
+            <li>Prepare las verduras pelando y cortando las patatas y picando finamente las cebollas, los puerros y el ajo.</li>
+            <li>Caliente un poco de aceite en una sartén y agregue las verduras picadas, cocinándolas suavemente durante unos 5 minutos.</li>
+            <li>Agregue el caldo de verduras a la misma sartén y aumente el fuego hasta que hierva a fuego lento, agregando el berro después de unos 10 minutos. Cocine hasta que todas las verduras estén blandas y se muelan fácilmente.</li>
+            <li>Licuar la sopa con una batidora de mano o en un mezclador, hasta que esté suave.</li>
+            <li>Si la sopa se ha enfriado demasiado mientras se está licuando, agregue la crème fraîche y vuelva a calentarla antes de servirla (de lo contrario, sírvala de inmediato). Sazone a su gusto.</li>
+          </ol>
+        format: basic_html
+    field_summary:
+      -
+        value: 'Una sopa maravillosamente simple y ligera, que aprovecha al máximo los productos locales de temporada.'
+        format: basic_html
+    field_tags:
+      -
+        entity: 46d48123-d90e-4459-8b46-febfa10330b9
+      -
+        entity: 1cda4745-41d0-427c-9619-cbe71d4696b2

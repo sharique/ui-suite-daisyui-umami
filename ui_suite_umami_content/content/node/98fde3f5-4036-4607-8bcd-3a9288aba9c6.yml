@@ -35,6 +35,12 @@ default:
     -
       alias: /articles/the-umami-guide-to-our-favorite-mushrooms
       langcode: en
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_body:
     -
       value: |
@@ -54,3 +60,58 @@ default:
       entity: 63df3c8c-251d-4f39-9473-630bd55c6c9d
     -
       entity: 1cda4745-41d0-427c-9619-cbe71d4696b2
+translations:
+  es:
+    revision_uid:
+      -
+        entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+    status:
+      -
+        value: true
+    uid:
+      -
+        entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+    title:
+      -
+        value: 'Guía Umami de nuestras setas preferidas'
+    promote:
+      -
+        value: true
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    moderation_state:
+      -
+        value: published
+    path:
+      -
+        alias: /articles/guia-umami-de-nuestras-setas-preferidas
+        langcode: es
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_body:
+      -
+        value: |
+          <p>Creemos que las setas son uno de los ingredientes que más se pueden disfrutar en la cocina. Hay muchas variedades comestibles para probar, cada una con su propia forma, tamaño y sabor distintivos. Y con curiosos nombres como rebozuelo, seta gitana, trompeta de los muertos o frigola frondosa ¿quién no querría saber más sobre cocinar con las poderosas setas?</p>
+          <p>Una de las mejoras cosas que tienen las setas son su versatilidad. Pueden ser fritas, tostadas, asadas al horno oa la parrilla e incluso cocinadas en un microondas. Y pueden ser servidas como ingrediente principal del plato como parte de un conjunto mayor. Esto hace a las setas una opción ideal para crear simples y deliciosos platos vegetarianos.</p>
+          <p>Así que echemos un vistazo a algunos de nuestros tipos preferidos de setas. Es posible que no hayas intentado cocinar con ellas antes, pero no dejes que eso te desanime. Con sus deliciosos y particulares sabores puedes transformar fácilmente sopas, entrantes, salsas y crear increíbles platos de pasta o salteados.</p>
+          <p>Prueba el adorable <strong>shiitake</strong>. Usadas en la cocina asiática, pueden comprarse secos y rehidratados para obtener un sabor fuerte y profundo. O comprarlo fresco y añadirlo a sopas y sofritos. No solo es una seta de intenso sabor, sino también de encantadora apariencia. Las formas de color marrón oscuro y suave proporcionarán textura a su comida. En su forma rehidratada son el complemento perfecto para un caldo o un risotto.</p>
+          <p>La hermosa <strong>rebozuelo</strong> (o chantarela) con su pulpa amarilla, tiene un sabor afrutado, pero vale la pena mencionar que hay muchas variedades parecidas por ahí y se ha de tener cuidado para asegurarse de que se está comiendo la correcta. Quedan muy bien en una tortilla o una sopa asiática para complementar los tonos amarillos.</p>
+          <p>La <strong>morchella</strong> (o morilla) marrón ofrece un sabor carnoso y distintivo y probablemente te encantará lo extraordinaria que se ve en una comida. La morchella es una seta más popular durante la primavera, que es cuando su disponibilidad es más alta.</p>
+          <p>Para algo delicado, pruebe la <strong>enoki</strong>, con sus diminutas cabezas blancas que crecen en un montón. Incluso se pueden comer crudas en ensaladas. Por último, puedes elegir la popular seta <strong>ostra</strong>. Se nombran porque no se parecen en nada a una seta y se asemejan a las entrañas de una ostra y su sabor dulce es delicioso.</p>
+        format: basic_html
+    field_media_image:
+      -
+        entity: 5478c908-76fb-4787-a1fd-142c4fce894a
+    field_tags:
+      -
+        entity: 63df3c8c-251d-4f39-9473-630bd55c6c9d
+      -
+        entity: 1cda4745-41d0-427c-9619-cbe71d4696b2

@@ -34,6 +34,12 @@ default:
     -
       alias: /recipes/thai-green-curry
       langcode: en
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_cooking_time:
     -
       value: 15
@@ -85,3 +91,90 @@ default:
     -
       value: 'A quick and easy version of the classic Thai green curry. Perfect for a midweek meal!'
       format: basic_html
+translations:
+  es:
+    revision_uid:
+      -
+        entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+    status:
+      -
+        value: true
+    uid:
+      -
+        entity: 46c51837-e840-4ae0-b03d-c36a0cb04412
+    title:
+      -
+        value: 'Curry verde tailandés'
+    promote:
+      -
+        value: true
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    moderation_state:
+      -
+        value: published
+    path:
+      -
+        alias: /recipes/curry-verde-tailandes
+        langcode: es
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_cooking_time:
+      -
+        value: 15
+    field_difficulty:
+      -
+        value: medium
+    field_ingredients:
+      -
+        value: '400g de leche de coco'
+      -
+        value: ' 400g de pollo o tofu'
+      -
+        value: ' 15g de pasta de curry verde tailandés'
+      -
+        value: ' 1 diente de ajo'
+      -
+        value: ' 10g de salsa de pescado'
+      -
+        value: ' 400g de champiñones'
+      -
+        value: ' 200g de judías verdes'
+      -
+        value: ' Hojas de cilantro fresco'
+      -
+        value: ' Arroz jazmín'
+    field_media_image:
+      -
+        entity: 38cbabbf-a65a-4619-9477-f21c7ee453c7
+    field_number_of_servings:
+      -
+        value: 4
+    field_preparation_time:
+      -
+        value: 10
+    field_recipe_category:
+      -
+        entity: 8f6d177c-89ab-49a3-9ee6-23a87f86da13
+    field_recipe_instruction:
+      -
+        value: |
+          <ol>
+            <li>En un wok grande, dorar el pollo, luego bajar el fuego y cocinar suavemente el ajo. Añadir las judías verdes picadas y revolver.</li>
+            <li>Añadir la leche de coco, la pasta de curry verde y la salsa de pescado. Mezclar bien y cocinar a fuego lento.</li>
+            <li>Agregar los champiñones picados y cocinar a fuego lento hasta que el pollo (o tofu) esté cocido.</li>
+            <li>Servir con arroz jazmín y una pizca de cilantro.</li>
+          </ol>
+        format: basic_html
+    field_summary:
+      -
+        value: 'Una versión rápida y fácil del clásico curry verde tailandés. ¡Perfecto para una comida entre semana!'
+        format: basic_html

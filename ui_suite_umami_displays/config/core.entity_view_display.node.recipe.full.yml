@@ -1,0 +1,611 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.full
+  - field.field.node.recipe.field_cooking_time
+  - field.field.node.recipe.field_difficulty
+  - field.field.node.recipe.field_ingredients
+  - field.field.node.recipe.field_media_image
+  - field.field.node.recipe.field_number_of_servings
+  - field.field.node.recipe.field_preparation_time
+  - field.field.node.recipe.field_recipe_category
+  - field.field.node.recipe.field_recipe_instruction
+  - field.field.node.recipe.field_summary
+  - field.field.node.recipe.field_tags
+  - node.type.recipe
+  module:
+  - display_builder
+  - options
+  - text
+  - user
+id: node.recipe.full
+targetEntityType: node
+bundle: recipe
+mode: full
+content:
+  content_moderation_control:
+    settings: {}
+    third_party_settings: {}
+    weight: 10
+    region: content
+  field_cooking_time:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {}
+    weight: 5
+    region: content
+  field_difficulty:
+    type: list_default
+    label: inline
+    settings: {}
+    third_party_settings: {}
+    weight: 7
+    region: content
+  field_ingredients:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 8
+    region: content
+  field_number_of_servings:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {}
+    weight: 6
+    region: content
+  field_preparation_time:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {}
+    weight: 4
+    region: content
+  field_recipe_category:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 1
+    region: content
+  field_recipe_instruction:
+    type: text_default
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 9
+    region: content
+  field_summary:
+    type: text_default
+    label: hidden
+    settings: {}
+    third_party_settings: {}
+    weight: 0
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 2
+    region: content
+hidden:
+  field_media_image: true
+  langcode: true
+  links: true
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+    - node_id: rf00000000000022
+      source_id: component
+      source:
+        component:
+          component_id: ui_suite_daisyui:grid_1_region
+          props:
+            container_type:
+              source_id: select
+              source:
+                value: container mx-auto
+          slots:
+            col_first:
+              sources:
+              - node_id: rf0000000000001c
+                source_id: entity_field
+                source:
+                  derivable_context: field:node:recipe:field_recipe_category
+                  field:node:recipe:field_recipe_category:
+                    value:
+                      sources:
+                      - source_id: field_formatter:node:recipe:field_recipe_category
+                        source:
+                          type: ui_patterns_component_per_item
+                          label: hidden
+                          settings:
+                            ui_patterns:
+                              component_id: ui_suite_daisyui:badge
+                              variant_id: null
+                              props: {}
+                              slots:
+                                label:
+                                  sources:
+                                  - node_id: rf0000000000001b
+                                    source_id: icon_renderable
+                                    source:
+                                      value:
+                                        icon_id: hero_solid_16:bookmark
+                                    third_party_settings: {}
+                                  - source_id: field_formatter:node:recipe:field_recipe_category
+                                    source:
+                                      type: entity_reference_label
+                                      settings:
+                                        link: true
+                                      third_party_settings: {}
+                                    node_id: ''
+                                    _weight: '0'
+                                    third_party_settings: {}
+                          third_party_settings: {}
+                          weight: 0
+                          region: content
+                        node_id: ''
+                        _weight: '0'
+                        third_party_settings: {}
+                third_party_settings:
+                  styles:
+                    selected: {}
+                    extra: p-4
+              - node_id: rf0000000000001d
+                source_id: entity_field
+                source:
+                  derivable_context: field:node:recipe:field_summary
+                  field:node:recipe:field_summary:
+                    value:
+                      sources:
+                      - source_id: field_formatter:node:recipe:field_summary
+                        source:
+                          type: string
+                          label: hidden
+                          settings: {}
+                          third_party_settings: {}
+                          weight: 0
+                          region: content
+                        node_id: ''
+                        _weight: '0'
+                        third_party_settings: {}
+                third_party_settings:
+                  styles:
+                    selected: {}
+                    extra: p-4
+              - node_id: rf0000000000001e
+                source_id: component
+                source:
+                  component:
+                    component_id: ui_suite_daisyui:grid_2_regions
+                    props:
+                      gap:
+                        source_id: select
+                        source:
+                          value: '8'
+                    slots:
+                      col_first:
+                        sources:
+                        - node_id: rf00000000000013
+                          source_id: entity_field
+                          source:
+                            derivable_context: field:node:recipe:field_media_image
+                            field:node:recipe:field_media_image:
+                              value:
+                                sources:
+                                - source_id: field_formatter:node:recipe:field_media_image
+                                  source:
+                                    type: entity_reference_entity_view
+                                    label: hidden
+                                    settings:
+                                      view_mode: responsive_3x2
+                                      link: false
+                                    third_party_settings: {}
+                                  node_id: ''
+                                  _weight: '0'
+                                  third_party_settings: {}
+                          third_party_settings: {}
+                      col_second:
+                        sources:
+                        - node_id: rf00000000000009
+                          source_id: component
+                          source:
+                            component:
+                              component_id: ui_suite_daisyui:stat
+                              props: {}
+                              slots:
+                                items:
+                                  sources:
+                                  - node_id: rf00000000000004
+                                    source_id: component
+                                    source:
+                                      component:
+                                        component_id: ui_suite_daisyui:stat_item
+                                        props:
+                                          centered:
+                                            source_id: checkbox
+                                            source:
+                                              value: 1
+                                        slots:
+                                          figure:
+                                            sources:
+                                            - node_id: rf00000000000001
+                                              source_id: icon_renderable
+                                              source:
+                                                value:
+                                                  icon_id: hero_solid_16:clock
+                                              third_party_settings: {}
+                                          title:
+                                            sources:
+                                            - node_id: rf00000000000002
+                                              source_id: textfield
+                                              source:
+                                                value: Preparation time
+                                              third_party_settings: {}
+                                          desc:
+                                            sources:
+                                            - node_id: rf00000000000003
+                                              source_id: entity_field
+                                              source:
+                                                derivable_context: field:node:recipe:field_preparation_time
+                                                field:node:recipe:field_preparation_time:
+                                                  value:
+                                                    sources:
+                                                    - source_id: field_formatter:node:recipe:field_preparation_time
+                                                      source:
+                                                        type: number_integer
+                                                        label: hidden
+                                                        settings: &id001
+                                                          prefix_suffix: true
+                                                          thousand_separator: ''
+                                                        third_party_settings: {}
+                                                        weight: 0
+                                                        region: content
+                                                      node_id: ''
+                                                      _weight: '0'
+                                                      third_party_settings: {}
+                                              third_party_settings: {}
+                                    third_party_settings:
+                                      styles:
+                                        selected: {}
+                                        extra: ''
+                                  - node_id: rf00000000000008
+                                    source_id: component
+                                    source:
+                                      component:
+                                        component_id: ui_suite_daisyui:stat_item
+                                        props:
+                                          centered:
+                                            source_id: checkbox
+                                            source:
+                                              value: 1
+                                        slots:
+                                          figure:
+                                            sources:
+                                            - node_id: rf00000000000005
+                                              source_id: icon_renderable
+                                              source:
+                                                value:
+                                                  icon_id: hero_solid_16:fire
+                                              third_party_settings: {}
+                                          title:
+                                            sources:
+                                            - node_id: rf00000000000006
+                                              source_id: textfield
+                                              source:
+                                                value: Cooking time
+                                              third_party_settings: {}
+                                          desc:
+                                            sources:
+                                            - node_id: rf00000000000007
+                                              source_id: entity_field
+                                              source:
+                                                derivable_context: field:node:recipe:field_cooking_time
+                                                field:node:recipe:field_cooking_time:
+                                                  value:
+                                                    sources:
+                                                    - source_id: field_formatter:node:recipe:field_cooking_time
+                                                      source:
+                                                        type: number_integer
+                                                        label: hidden
+                                                        settings: *id001
+                                                        third_party_settings: {}
+                                                        weight: 0
+                                                        region: content
+                                                      node_id: ''
+                                                      _weight: '0'
+                                                      third_party_settings: {}
+                                              third_party_settings: {}
+                                    third_party_settings:
+                                      styles:
+                                        selected: {}
+                                        extra: ''
+                          third_party_settings:
+                            styles:
+                              selected: {}
+                              extra: ''
+                        - node_id: rf00000000000012
+                          source_id: component
+                          source:
+                            component:
+                              component_id: ui_suite_daisyui:stat
+                              props: {}
+                              slots:
+                                items:
+                                  sources:
+                                  - node_id: rf0000000000000d
+                                    source_id: component
+                                    source:
+                                      component:
+                                        component_id: ui_suite_daisyui:stat_item
+                                        props:
+                                          centered:
+                                            source_id: checkbox
+                                            source:
+                                              value: 1
+                                        slots:
+                                          figure:
+                                            sources:
+                                            - node_id: rf0000000000000a
+                                              source_id: icon_renderable
+                                              source:
+                                                value:
+                                                  icon_id: hero_solid_16:users
+                                              third_party_settings: {}
+                                          title:
+                                            sources:
+                                            - node_id: rf0000000000000b
+                                              source_id: textfield
+                                              source:
+                                                value: Number of servings
+                                              third_party_settings: {}
+                                          desc:
+                                            sources:
+                                            - node_id: rf0000000000000c
+                                              source_id: entity_field
+                                              source:
+                                                derivable_context: field:node:recipe:field_number_of_servings
+                                                field:node:recipe:field_number_of_servings:
+                                                  value:
+                                                    sources:
+                                                    - source_id: field_formatter:node:recipe:field_number_of_servings
+                                                      source:
+                                                        type: number_integer
+                                                        label: hidden
+                                                        settings:
+                                                          thousand_separator: ''
+                                                          prefix_suffix: false
+                                                        third_party_settings: {}
+                                                        weight: 0
+                                                        region: content
+                                                      node_id: ''
+                                                      _weight: '0'
+                                                      third_party_settings: {}
+                                              third_party_settings: {}
+                                    third_party_settings:
+                                      styles:
+                                        selected: {}
+                                        extra: ''
+                                  - node_id: rf00000000000011
+                                    source_id: component
+                                    source:
+                                      component:
+                                        component_id: ui_suite_daisyui:stat_item
+                                        props:
+                                          centered:
+                                            source_id: checkbox
+                                            source:
+                                              value: 1
+                                        slots:
+                                          figure:
+                                            sources:
+                                            - node_id: rf0000000000000e
+                                              source_id: icon_renderable
+                                              source:
+                                                value:
+                                                  icon_id: hero_solid_16:chart-bar
+                                              third_party_settings: {}
+                                          title:
+                                            sources:
+                                            - node_id: rf0000000000000f
+                                              source_id: textfield
+                                              source:
+                                                value: Difficulty
+                                              third_party_settings: {}
+                                          desc:
+                                            sources:
+                                            - node_id: rf00000000000010
+                                              source_id: entity_field
+                                              source:
+                                                derivable_context: field:node:recipe:field_difficulty
+                                                field:node:recipe:field_difficulty:
+                                                  value:
+                                                    sources:
+                                                    - source_id: field_formatter:node:recipe:field_difficulty
+                                                      source:
+                                                        type: list_default
+                                                        label: hidden
+                                                        settings: {}
+                                                        third_party_settings: {}
+                                                        weight: 0
+                                                        region: content
+                                                      node_id: ''
+                                                      _weight: '0'
+                                                      third_party_settings: {}
+                                              third_party_settings: {}
+                                    third_party_settings:
+                                      styles:
+                                        selected: {}
+                                        extra: ''
+                          third_party_settings:
+                            styles:
+                              selected: {}
+                              extra: ''
+                third_party_settings:
+                  styles:
+                    selected: {}
+                    extra: p-4
+              - node_id: rf0000000000001f
+                source_id: component
+                source:
+                  component:
+                    component_id: ui_suite_daisyui:grid_2_regions
+                    props:
+                      gap:
+                        source_id: select
+                        source:
+                          value: '8'
+                    slots:
+                      col_first:
+                        sources:
+                        - node_id: rf00000000000017
+                          source_id: component
+                          source:
+                            component:
+                              component_id: ui_suite_daisyui:card
+                              props: {}
+                              slots:
+                                title:
+                                  sources:
+                                  - node_id: rf00000000000014
+                                    source_id: textfield
+                                    source:
+                                      value: Ingredients
+                                    third_party_settings: {}
+                                text:
+                                  sources:
+                                  - node_id: rf00000000000016
+                                    source_id: component
+                                    source:
+                                      component:
+                                        component_id: ui_suite_daisyui:list
+                                        props: {}
+                                        slots:
+                                          rows:
+                                            sources:
+                                            - node_id: rf00000000000015
+                                              source_id: entity_field
+                                              source:
+                                                derivable_context: field:node:recipe:field_ingredients
+                                                field:node:recipe:field_ingredients:
+                                                  value:
+                                                    sources:
+                                                    - source_id: field_formatter:node:recipe:field_ingredients
+                                                      source:
+                                                        type: ui_patterns_component_per_item
+                                                        label: hidden
+                                                        settings:
+                                                          ui_patterns:
+                                                            component_id: ui_suite_daisyui:list_row
+                                                            variant_id: null
+                                                            props: {}
+                                                            slots:
+                                                              title:
+                                                                sources:
+                                                                - source_id: field_formatter:node:recipe:field_ingredients
+                                                                  source:
+                                                                    type: string
+                                                                    settings:
+                                                                      link_to_entity: false
+                                                                    third_party_settings: {}
+                                                                  node_id: ''
+                                                                  _weight: '0'
+                                                                  third_party_settings: {}
+                                                        third_party_settings: {}
+                                                        weight: 0
+                                                        region: content
+                                                      node_id: ''
+                                                      _weight: '0'
+                                                      third_party_settings: {}
+                                              third_party_settings: {}
+                                    third_party_settings:
+                                      styles:
+                                        selected: {}
+                                        extra: ''
+                          third_party_settings:
+                            styles:
+                              selected:
+                                colors_background_color: bg-base-200
+                              extra: p-4
+                      col_second:
+                        sources:
+                        - node_id: rf0000000000001a
+                          source_id: component
+                          source:
+                            component:
+                              component_id: ui_suite_daisyui:card
+                              props: {}
+                              slots:
+                                title:
+                                  sources:
+                                  - node_id: rf00000000000018
+                                    source_id: textfield
+                                    source:
+                                      value: Directions
+                                    third_party_settings: {}
+                                text:
+                                  sources:
+                                  - node_id: rf00000000000019
+                                    source_id: entity_field
+                                    source:
+                                      derivable_context: field:node:recipe:field_recipe_instruction
+                                      field:node:recipe:field_recipe_instruction:
+                                        value:
+                                          sources:
+                                          - source_id: field_formatter:node:recipe:field_recipe_instruction
+                                            source:
+                                              type: text_default
+                                              label: hidden
+                                              settings: {}
+                                              third_party_settings: {}
+                                              weight: 0
+                                              region: content
+                                            node_id: ''
+                                            _weight: '0'
+                                            third_party_settings: {}
+                                    third_party_settings: {}
+                          third_party_settings:
+                            styles:
+                              selected: {}
+                              extra: ''
+                third_party_settings:
+                  styles:
+                    selected: {}
+                    extra: p-4
+              - node_id: rf00000000000020
+                source_id: textfield
+                source:
+                  value: Related recipes
+                third_party_settings:
+                  styles:
+                    selected:
+                      typography_font_size: text-2xl
+                    extra: p-4
+              - node_id: rf00000000000021
+                source_id: block
+                source:
+                  plugin_id: views_block:related_recipes-related_recipes_block
+                third_party_settings:
+                  styles:
+                    selected: {}
+                    extra: p-4
+      third_party_settings:
+        styles:
+          selected:
+            colors_background_color: bg-base-100
+          extra: p-10

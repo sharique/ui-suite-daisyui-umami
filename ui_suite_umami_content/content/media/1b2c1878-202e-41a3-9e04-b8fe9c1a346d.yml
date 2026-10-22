@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'A delicious chocolate brownie'
@@ -31,3 +37,34 @@ default:
       width: 768
       height: 511
       entity: 40aeea2a-1bed-4fda-860e-c80c53308d31
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Percances al hornear - nuestros consejos para solucionar los problemas'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Un delicioso brownie de chocolate'
+        title: ''
+        width: 768
+        height: 511
+        entity: 822b2993-372f-47da-836b-474ddd438681

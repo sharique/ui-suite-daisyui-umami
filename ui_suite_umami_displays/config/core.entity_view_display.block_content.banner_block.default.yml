@@ -2,249 +2,266 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.banner_block
-    - field.field.block_content.banner_block.field_content_link
-    - field.field.block_content.banner_block.field_media_image
-    - field.field.block_content.banner_block.field_summary
-    - field.field.block_content.banner_block.field_title
+  - block_content.type.banner_block
+  - field.field.block_content.banner_block.field_content_link
+  - field.field.block_content.banner_block.field_media_image
+  - field.field.block_content.banner_block.field_summary
+  - field.field.block_content.banner_block.field_title
   module:
-    - display_builder
-    - link
+  - display_builder
+  - link
 third_party_settings:
   display_builder:
     profile: default
     sources:
-      -
-        node_id: 17af9ae6ef35431d
-        source_id: component
-        source:
-          component:
-            component_id: 'ui_suite_daisyui:hero'
-            variant_id: null
-            props:
-              attributes:
-                source_id: attributes
+    - node_id: 17af9ae6ef35431d
+      source_id: component
+      source:
+        component:
+          component_id: ui_suite_daisyui:card
+          variant_id:
+            source_id: select
+            source:
+              value: ''
+            node_id: 6ac95caa6c2ab
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+              node_id: 6ac95caa6c415
+            heading_level:
+              source_id: select
+              source:
+                value: ''
+              node_id: 6ac95caa6c48c
+            image_bottom:
+              source_id: checkbox
+              source:
+                value: 0
+              node_id: 6ac95caa6c4e6
+            centered:
+              source_id: checkbox
+              node_id: 6ac95caa6c549
+              source:
+                value: 0
+            image_full:
+              source_id: checkbox
+              node_id: 6ac95caa6c5a0
+              source:
+                value: 1
+            actions_top:
+              source_id: checkbox
+              node_id: 6ac95caa6c5f7
+              source:
+                value: 0
+            actions_position:
+              source_id: select
+              source:
+                value: center
+              node_id: 6ac95caa6c64e
+            size:
+              source_id: select
+              source:
+                value: ''
+              node_id: 6ac95caa6c6ab
+            border:
+              source_id: select
+              source:
+                value: ''
+              node_id: 6ac95caa6c702
+            url:
+              source_id: url
+              source:
+                value: null
+              node_id: 6ac95caa6c760
+          slots:
+            image:
+              sources:
+              - node_id: 4af385aeb22213d4
+                source_id: entity_field
                 source:
-                  value: ''
-                node_id: 6ac958f279fd2
-              heading_level:
-                source_id: select
+                  derivable_context: field:block_content:banner_block:field_media_image
+                  field:block_content:banner_block:field_media_image:
+                    value:
+                      sources:
+                      - source_id: field_formatter:block_content:banner_block:field_media_image
+                        source:
+                          type: entity_reference_entity_view
+                          settings:
+                            view_mode: scale_crop_7_3_large
+                        node_id: ''
+                        _weight: '0'
+                        third_party_settings: {}
+                third_party_settings: {}
+            title:
+              sources:
+              - node_id: 50b0b42e144c79da
+                source_id: entity_field
                 source:
-                  value: '2'
-                node_id: 6ac958f27a03a
-              reverse:
-                source_id: checkbox
-                node_id: 6ac958f27a095
+                  derivable_context: field:block_content:banner_block:field_title
+                  field:block_content:banner_block:field_title:
+                    value:
+                      sources:
+                      - source_id: field_formatter:block_content:banner_block:field_title
+                        source:
+                          type: string
+                          label: hidden
+                          settings:
+                            link_to_entity: false
+                            link_rel: canonical
+                          third_party_settings: {}
+                          weight: 2
+                          region: content
+                third_party_settings:
+                  styles:
+                    selected:
+                      spacing_margin_bottom: mb-2
+                      typography_font_size: text-lg
+                    extra: ''
+            text:
+              sources:
+              - node_id: 58710aafb182f238
+                source_id: entity_field
                 source:
-                  value: 0
-              centered:
-                source_id: checkbox
-                node_id: 6ac958f27a0ef
+                  derivable_context: field:block_content:banner_block:field_summary
+                  field:block_content:banner_block:field_summary:
+                    value:
+                      sources:
+                      - source_id: field_formatter:block_content:banner_block:field_summary
+                        source:
+                          type: basic_string
+                          label: hidden
+                          settings: {}
+                          third_party_settings: {}
+                          weight: 3
+                          region: content
+                third_party_settings:
+                  styles:
+                    selected:
+                      spacing_padding_bottom: pb-3
+                      spacing_padding_top: pt-3
+                    extra: ''
+            actions:
+              sources:
+              - node_id: 9fcd4c91744d5f4a
+                source_id: component
                 source:
-                  value: 0
-              responsive_centered:
-                source_id: checkbox
-                node_id: 6ac958f27a153
-                source:
-                  value: 0
-              overlay_image:
-                source_id: url
-                source:
-                  value: null
-                node_id: 6ac958f27a1ad
-            slots:
-              aside:
-                sources:
-                  -
-                    node_id: 4af385aeb22213d4
-                    source_id: entity_field
-                    source:
-                      derivable_context: 'field:block_content:banner_block:field_media_image'
-                      'field:block_content:banner_block:field_media_image':
-                        value:
-                          sources:
-                            -
-                              source_id: 'field_formatter:block_content:banner_block:field_media_image'
-                              source:
-                                type: entity_reference_entity_view
-                                settings:
-                                  view_mode: scale_crop_7_3_large
-                              node_id: ''
-                              _weight: '0'
-                              third_party_settings: {  }
-                    third_party_settings: {  }
-              title:
-                sources:
-                  -
-                    node_id: 50b0b42e144c79da
-                    source_id: entity_field
-                    source:
-                      derivable_context: 'field:block_content:banner_block:field_title'
-                      'field:block_content:banner_block:field_title':
-                        value:
-                          sources:
-                            -
-                              source_id: 'field_formatter:block_content:banner_block:field_title'
-                              source:
-                                type: string
-                                label: hidden
-                                settings:
-                                  link_to_entity: false
-                                  link_rel: canonical
-                                third_party_settings: {  }
-                                weight: 2
-                                region: content
-                    third_party_settings:
-                      styles:
-                        selected:
-                          spacing_margin_bottom: mb-2
-                          typography_font_size: text-lg
-                        extra: ''
-              text:
-                sources:
-                  -
-                    node_id: 58710aafb182f238
-                    source_id: entity_field
-                    source:
-                      derivable_context: 'field:block_content:banner_block:field_summary'
-                      'field:block_content:banner_block:field_summary':
-                        value:
-                          sources:
-                            -
-                              source_id: 'field_formatter:block_content:banner_block:field_summary'
-                              source:
-                                type: basic_string
-                                label: hidden
-                                settings: {  }
-                                third_party_settings: {  }
-                                weight: 3
-                                region: content
-                    third_party_settings:
-                      styles:
-                        selected:
-                          spacing_padding_bottom: pb-3
-                          spacing_padding_top: pt-3
-                        extra: ''
-              button:
-                sources:
-                  -
-                    node_id: 9fcd4c91744d5f4a
-                    source_id: component
-                    source:
-                      component:
-                        component_id: 'ui_suite_daisyui:button'
-                        variant_id:
-                          source_id: select
+                  component:
+                    component_id: ui_suite_daisyui:button
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: accent
+                      node_id: 6ac959418876f
+                    props:
+                      attributes:
+                        source_id: attributes
+                        source:
+                          value: ''
+                        node_id: 6ac9594188930
+                      outline:
+                        source_id: select
+                        source:
+                          value: ''
+                        node_id: 6ac9594188992
+                      shape:
+                        source_id: select
+                        source:
+                          value: ''
+                        node_id: 6ac95941889ed
+                      size:
+                        source_id: select
+                        source:
+                          value: ''
+                        node_id: 6ac9594188a49
+                      responsive:
+                        source_id: checkbox
+                        node_id: 6ac9594188aa3
+                        source:
+                          value: 0
+                      soft:
+                        source_id: checkbox
+                        node_id: 6ac9594188afd
+                        source:
+                          value: 0
+                      display:
+                        source_id: select
+                        source:
+                          value: ''
+                        node_id: 6ac9594188b58
+                      status:
+                        source_id: select
+                        source:
+                          value: ''
+                        node_id: 6ac9594188bb8
+                      ghost:
+                        source_id: checkbox
+                        node_id: 6ac9594188c18
+                        source:
+                          value: 0
+                      link:
+                        source_id: checkbox
+                        node_id: 6ac9594188c72
+                        source:
+                          value: 0
+                      url:
+                        source_id: url
+                        source:
+                          value: null
+                        node_id: 6ac9594188ccd
+                      modal_id:
+                        source_id: textfield
+                        source:
+                          value: ''
+                        node_id: 6ac9594188d2d
+                      drawer_id:
+                        source_id: textfield
+                        source:
+                          value: ''
+                        node_id: 6ac9594188d8b
+                      icon:
+                        source_id: icon
+                        source:
+                          value:
+                            icon_id: ''
+                        node_id: 6ac9594188de9
+                      icon_position:
+                        source_id: select
+                        source:
+                          value: right
+                        node_id: 6ac9594188e64
+                    slots:
+                      label:
+                        sources:
+                        - node_id: 1727f3ca2e5a4ed4
+                          source_id: entity_field
                           source:
-                            value: accent
-                          node_id: 6ac959418876f
-                        props:
-                          attributes:
-                            source_id: attributes
-                            source:
-                              value: ''
-                            node_id: 6ac9594188930
-                          outline:
-                            source_id: select
-                            source:
-                              value: ''
-                            node_id: 6ac9594188992
-                          shape:
-                            source_id: select
-                            source:
-                              value: ''
-                            node_id: 6ac95941889ed
-                          size:
-                            source_id: select
-                            source:
-                              value: ''
-                            node_id: 6ac9594188a49
-                          responsive:
-                            source_id: checkbox
-                            node_id: 6ac9594188aa3
-                            source:
-                              value: 0
-                          soft:
-                            source_id: checkbox
-                            node_id: 6ac9594188afd
-                            source:
-                              value: 0
-                          display:
-                            source_id: select
-                            source:
-                              value: ''
-                            node_id: 6ac9594188b58
-                          status:
-                            source_id: select
-                            source:
-                              value: ''
-                            node_id: 6ac9594188bb8
-                          ghost:
-                            source_id: checkbox
-                            node_id: 6ac9594188c18
-                            source:
-                              value: 0
-                          link:
-                            source_id: checkbox
-                            node_id: 6ac9594188c72
-                            source:
-                              value: 0
-                          url:
-                            source_id: url
-                            source:
-                              value: null
-                            node_id: 6ac9594188ccd
-                          modal_id:
-                            source_id: textfield
-                            source:
-                              value: ''
-                            node_id: 6ac9594188d2d
-                          drawer_id:
-                            source_id: textfield
-                            source:
-                              value: ''
-                            node_id: 6ac9594188d8b
-                          icon:
-                            source_id: icon
-                            source:
+                            derivable_context: field:block_content:banner_block:field_content_link
+                            field:block_content:banner_block:field_content_link:
                               value:
-                                icon_id: ''
-                            node_id: 6ac9594188de9
-                          icon_position:
-                            source_id: select
-                            source:
-                              value: right
-                            node_id: 6ac9594188e64
-                        slots:
-                          label:
-                            sources:
-                              -
-                                node_id: 1727f3ca2e5a4ed4
-                                source_id: entity_field
-                                source:
-                                  derivable_context: 'field:block_content:banner_block:field_content_link'
-                                  'field:block_content:banner_block:field_content_link':
-                                    value:
-                                      sources:
-                                        -
-                                          source_id: 'field_formatter:block_content:banner_block:field_content_link'
-                                          source:
-                                            type: link
-                                            label: hidden
-                                            settings:
-                                              trim_length: 80
-                                              url_only: false
-                                              url_plain: false
-                                              rel: ''
-                                              target: ''
-                                            third_party_settings: {  }
-                                            weight: 4
-                                            region: content
-                                third_party_settings:
-                                  styles:
-                                    selected: {  }
-                                    extra: ''
-        third_party_settings: {  }
+                                sources:
+                                - source_id: field_formatter:block_content:banner_block:field_content_link
+                                  source:
+                                    type: link
+                                    label: hidden
+                                    settings:
+                                      trim_length: 80
+                                      url_only: false
+                                      url_plain: false
+                                      rel: ''
+                                      target: ''
+                                    third_party_settings: {}
+                                    weight: 4
+                                    region: content
+                          third_party_settings:
+                            styles:
+                              selected: {}
+                              extra: ''
+      third_party_settings:
+        styles:
+          selected: {}
+          extra: container mx-auto
 id: block_content.banner_block.default
 targetEntityType: block_content
 bundle: banner_block
@@ -259,7 +276,7 @@ content:
       url_plain: false
       rel: ''
       target: ''
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: 4
     region: content
   field_media_image:
@@ -268,14 +285,14 @@ content:
     settings:
       view_mode: scale_crop_7_3_large
       link: false
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: 1
     region: content
   field_summary:
     type: basic_string
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     weight: 3
     region: content
   field_title:
@@ -284,7 +301,7 @@ content:
     settings:
       link_to_entity: false
       link_rel: canonical
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: 2
     region: content
 hidden:

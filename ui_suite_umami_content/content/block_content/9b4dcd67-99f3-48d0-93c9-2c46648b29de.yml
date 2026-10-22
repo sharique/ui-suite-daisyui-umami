@@ -17,6 +17,15 @@ default:
   revision_translation_affected:
     -
       value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 0
   field_copyright:
     -
       value: '&copy; 2026 Terms & Conditions'
@@ -25,3 +34,34 @@ default:
     -
       value: '<strong>Umami Magazine & Umami Publications</strong> is a fictional magazine and publisher for illustrative purposes only.'
       format: basic_html
+translations:
+  es:
+    status:
+      -
+        value: true
+    info:
+      -
+        value: 'Aviso Legal Umami'
+    reusable:
+      -
+        value: true
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_id: 0
+    field_copyright:
+      -
+        value: '&copy; 2026 Términos y Condiciones'
+        format: basic_html
+    field_disclaimer:
+      -
+        value: '<strong>Revista Umami y Publicaciones Umami</strong> es una revista ficticia publicada con propósito ilustrativo sólamente.'
+        format: basic_html

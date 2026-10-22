@@ -20,6 +20,15 @@ default:
   revision_translation_affected:
     -
       value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 0
   field_content_link:
     -
       title: 'Find out more'
@@ -34,3 +43,40 @@ default:
   field_title:
     -
       value: 'Umami Food Magazine'
+translations:
+  es:
+    status:
+      -
+        value: true
+    info:
+      -
+        value: 'Umami Pie de Pagina Promocional'
+    reusable:
+      -
+        value: true
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_id: 0
+    field_content_link:
+      -
+        uri: 'internal:/acerca-de-umami'
+        title: 'Más información'
+        options: {  }
+    field_media_image:
+      -
+        entity: d8fd0887-1a76-49a6-8a23-c84ce1bea414
+    field_summary:
+      -
+        value: 'Trucos y consejos. Artículos exclusivos de la revista, recetas y una variedad de razones para conseguir tu copia hoy.'
+    field_title:
+      -
+        value: 'Revista de Comida Umami'

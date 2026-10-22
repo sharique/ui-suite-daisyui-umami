@@ -24,6 +24,12 @@ default:
     -
       langcode: en
       alias: null
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_media_image:
     -
       alt: 'Oatmeal topped with a vibrant mix of berries, nuts, and seeds'
@@ -31,3 +37,34 @@ default:
       width: 768
       height: 512
       entity: b5513c77-f287-49f8-8801-d3faf471617c
+translations:
+  es:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 0
+    name:
+      -
+        value: 'Dale a tu avena el cambio de imagen definitivo'
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        langcode: es
+        alias: null
+    content_translation_source:
+      -
+        value: und
+    content_translation_outdated:
+      -
+        value: false
+    field_media_image:
+      -
+        alt: 'Avena con una mezcla vibrante de bayas, nueces y semillas'
+        title: ''
+        width: 768
+        height: 512
+        entity: 6fba39c7-dff2-4956-80ad-8605ad12c33b

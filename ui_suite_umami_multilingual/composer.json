@@ -1,0 +1,10 @@
+{
+  "name": "local/ui-suite-umami-multilingual",
+  "type": "drupal-recipe",
+  "description": "UI Suite Umami: multilingual",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/core": "^11.4",
+    "local/ui-suite-umami-content-model": "*"
+  }
+}
