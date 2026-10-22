@@ -11,7 +11,17 @@ recipes:
 config:
   # The recipe installs language, but not the module's own default config, so
   # the locked languages (und, zxx) must be imported for Spanish to be added.
-  strict: false
+  strict:
+    - language.content_settings.block_content.banner_block
+    - language.content_settings.block_content.basic
+    - language.content_settings.block_content.disclaimer_block
+    - language.content_settings.block_content.footer_promo_block
+    - language.content_settings.media.image
+    - language.content_settings.node.article
+    - language.content_settings.node.page
+    - language.content_settings.node.recipe
+    - language.content_settings.taxonomy_term.recipe_category
+    - language.content_settings.taxonomy_term.tags
   import:
     language:
       - language.entity.en

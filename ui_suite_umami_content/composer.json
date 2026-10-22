@@ -5,7 +5,6 @@
   "license": "GPL-2.0-or-later",
   "require": {
     "drupal/core": "^11.4",
-    "drupal/ui_suite_daisyui": "*",
     "local/ui-suite-umami-content-model": "*",
     "local/ui-suite-umami-multilingual": "*"
   }

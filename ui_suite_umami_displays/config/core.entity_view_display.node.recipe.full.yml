@@ -109,7 +109,7 @@ third_party_settings:
   display_builder:
     profile: default
     sources:
-    - node_id: rf00000000000022
+    - node_id: rf00000000000023
       source_id: component
       source:
         component:
@@ -122,6 +122,30 @@ third_party_settings:
           slots:
             col_first:
               sources:
+              - node_id: rf0000000000001d
+                source_id: entity_field
+                source:
+                  derivable_context: field:node:recipe:title
+                  field:node:recipe:title:
+                    value:
+                      sources:
+                      - source_id: field_formatter:node:recipe:title
+                        source:
+                          type: string
+                          label: hidden
+                          settings:
+                            link_to_entity: false
+                          third_party_settings: {}
+                          weight: 0
+                          region: content
+                        node_id: ''
+                        _weight: '0'
+                        third_party_settings: {}
+                third_party_settings:
+                  styles:
+                    selected:
+                      typography_font_size: text-3xl
+                    extra: p-4
               - node_id: rf0000000000001c
                 source_id: entity_field
                 source:
@@ -166,7 +190,7 @@ third_party_settings:
                   styles:
                     selected: {}
                     extra: p-4
-              - node_id: rf0000000000001d
+              - node_id: rf0000000000001e
                 source_id: entity_field
                 source:
                   derivable_context: field:node:recipe:field_summary
@@ -188,7 +212,7 @@ third_party_settings:
                   styles:
                     selected: {}
                     extra: p-4
-              - node_id: rf0000000000001e
+              - node_id: rf0000000000001f
                 source_id: component
                 source:
                   component:
@@ -460,7 +484,7 @@ third_party_settings:
                   styles:
                     selected: {}
                     extra: p-4
-              - node_id: rf0000000000001f
+              - node_id: rf00000000000020
                 source_id: component
                 source:
                   component:
@@ -587,7 +611,7 @@ third_party_settings:
                   styles:
                     selected: {}
                     extra: p-4
-              - node_id: rf00000000000020
+              - node_id: rf00000000000021
                 source_id: textfield
                 source:
                   value: Related recipes
@@ -596,7 +620,7 @@ third_party_settings:
                     selected:
                       typography_font_size: text-2xl
                     extra: p-4
-              - node_id: rf00000000000021
+              - node_id: rf00000000000022
                 source_id: block
                 source:
                   plugin_id: views_block:related_recipes-related_recipes_block

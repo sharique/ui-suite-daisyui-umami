@@ -76,7 +76,7 @@ display:
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 12
+          items_per_page: 20
           total_pages: null
           id: 0
           tags:
@@ -213,13 +213,35 @@ display:
         groups:
           1: AND
       style:
-        type: grid_responsive
+        type: ui_patterns
         options:
-          uses_fields: false
-          columns: 3
-          cell_min_width: 240
-          grid_gutter: 14
-          alignment: horizontal
+          ui_patterns:
+            ui_patterns:
+              component_id: 'ui_suite_daisyui:grid_cols'
+              variant_id: null
+              props:
+                grid_cols:
+                  source_id: select
+                  source:
+                    value: '1'
+                grid_cols_md:
+                  source_id: select
+                  source:
+                    value: '2'
+                grid_cols_lg:
+                  source_id: select
+                  source:
+                    value: '3'
+                gap:
+                  source_id: select
+                  source:
+                    value: '4'
+              slots:
+                items:
+                  sources:
+                    -
+                      source_id: view_rows
+                      source: {  }
       row:
         type: 'entity:node'
         options:

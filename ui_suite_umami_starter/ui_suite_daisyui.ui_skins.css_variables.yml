@@ -50,14 +50,14 @@ color-neutral:
   label: "Neutral dark color"
   type: textfield
   default_values:
-    ":root": "#464646"
+    ":root": "#767775"
 
 color-neutral-content:
   category: "Colors"
   label: "Foreground content color to use on neutral color"
   type: textfield
   default_values:
-    ":root": "#fbf5ee"
+    ":root": "#ffffff"
 
 color-base-100:
   category: "Colors"

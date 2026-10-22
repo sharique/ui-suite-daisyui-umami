@@ -5,12 +5,13 @@
   "license": "GPL-2.0-or-later",
   "require": {
     "drupal/core": "^11.4",
-    "drupal/ui_suite_daisyui": "*",
-    "drupal/display_builder": "*",
-    "drupal/ui_patterns": "*",
-    "drupal/ui_icons": "*",
-    "drupal/ui_styles": "*",
-    "drupal/ui_skins": "*",
-    "local/ui-suite-umami-content-model": "*"
+    "drupal/ui_suite_daisyui": "5.0.x-dev",
+    "drupal/display_builder": "1.0.x-dev",
+    "drupal/ui_patterns": "2.0.x-dev",
+    "drupal/ui_icons": "^2.1",
+    "drupal/ui_styles": "^1.22",
+    "drupal/ui_skins": "^1.2",
+    "local/ui-suite-umami-content-model": "*",
+    "npm-asset/heroicons": "^2.2"
   }
 }

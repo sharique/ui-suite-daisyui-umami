@@ -45,7 +45,7 @@ third_party_settings:
             image_bottom:
               source_id: checkbox
               source:
-                value: 0
+                value: 1
               node_id: 6ac95caa6c4e6
             centered:
               source_id: checkbox
@@ -65,7 +65,7 @@ third_party_settings:
             actions_position:
               source_id: select
               source:
-                value: center
+                value: start
               node_id: 6ac95caa6c64e
             size:
               source_id: select
@@ -75,7 +75,7 @@ third_party_settings:
             border:
               source_id: select
               source:
-                value: ''
+                value: border
               node_id: 6ac95caa6c702
             url:
               source_id: url
@@ -122,8 +122,6 @@ third_party_settings:
                         _weight: '0'
                         third_party_settings: {}
             actions:
-              sources: {}
-            text:
               sources:
               - source_id: entity_field
                 source:
@@ -189,6 +187,34 @@ third_party_settings:
                           _weight: '0'
                           third_party_settings: {}
                 third_party_settings: {}
+            text:
+              sources:
+              - source_id: component
+                source:
+                  component:
+                    component_id: ui_suite_daisyui:link
+                    variant_id:
+                      source_id: select
+                      source:
+                        value: primary
+                    props:
+                      url:
+                        source_id: entity_link
+                        source:
+                          template: canonical
+                          absolute: false
+                    slots:
+                      label:
+                        sources:
+                        - source_id: textfield
+                          source:
+                            value: VIEW RECIPE
+                          third_party_settings: {}
+                third_party_settings:
+                  styles:
+                    selected:
+                      typography_font_size: text-sm
+                    extra: p-2
       third_party_settings:
         styles:
           selected:

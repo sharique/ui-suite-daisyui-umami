@@ -56,7 +56,7 @@ third_party_settings:
   display_builder:
     profile: default
     sources:
-    - node_id: ap0000000000000e
+    - node_id: ap00000000000010
       source_id: component
       source:
         component:
@@ -81,7 +81,7 @@ third_party_settings:
           slots:
             col_first:
               sources:
-              - node_id: ap0000000000000b
+              - node_id: ap0000000000000d
                 source_id: component
                 source:
                   component:
@@ -94,7 +94,31 @@ third_party_settings:
                     slots:
                       col_first:
                         sources:
-                        - node_id: ap00000000000005
+                        - node_id: ap00000000000001
+                          source_id: entity_field
+                          source:
+                            derivable_context: field:node:article:title
+                            field:node:article:title:
+                              value:
+                                sources:
+                                - source_id: field_formatter:node:article:title
+                                  source:
+                                    type: string
+                                    label: hidden
+                                    settings:
+                                      link_to_entity: false
+                                    third_party_settings: {}
+                                    weight: 0
+                                    region: content
+                                  node_id: ''
+                                  _weight: '0'
+                                  third_party_settings: {}
+                          third_party_settings:
+                            styles:
+                              selected:
+                                typography_font_size: text-3xl
+                              extra: p-2
+                        - node_id: ap00000000000006
                           source_id: component
                           source:
                             component:
@@ -103,15 +127,15 @@ third_party_settings:
                               slots:
                                 content:
                                   sources:
-                                  - node_id: ap00000000000001
+                                  - node_id: ap00000000000002
                                     source_id: textfield
                                     source:
-                                      value: 'By '
+                                      value: 'by '
                                     third_party_settings:
                                       styles:
                                         selected: {}
                                         extra: ''
-                                  - node_id: ap00000000000002
+                                  - node_id: ap00000000000003
                                     source_id: entity_field
                                     source:
                                       derivable_context: field:node:article:uid
@@ -130,15 +154,15 @@ third_party_settings:
                                             _weight: '0'
                                             third_party_settings: {}
                                     third_party_settings: {}
-                                  - node_id: ap00000000000003
+                                  - node_id: ap00000000000004
                                     source_id: textfield
                                     source:
-                                      value: ' on '
+                                      value: " \xB7 "
                                     third_party_settings:
                                       styles:
                                         selected: {}
                                         extra: ''
-                                  - node_id: ap00000000000004
+                                  - node_id: ap00000000000005
                                     source_id: entity_field
                                     source:
                                       derivable_context: field:node:article:created
@@ -160,9 +184,10 @@ third_party_settings:
                                     third_party_settings: {}
                           third_party_settings:
                             styles:
-                              selected: {}
-                              extra: ''
-                        - node_id: ap00000000000007
+                              selected:
+                                typography_font_size: text-sm
+                              extra: p-2
+                        - node_id: ap00000000000009
                           source_id: component
                           source:
                             component:
@@ -171,7 +196,15 @@ third_party_settings:
                               slots:
                                 content:
                                   sources:
-                                  - node_id: ap00000000000006
+                                  - node_id: ap00000000000007
+                                    source_id: textfield
+                                    source:
+                                      value: 'Tags: '
+                                    third_party_settings:
+                                      styles:
+                                        selected: {}
+                                        extra: ''
+                                  - node_id: ap00000000000008
                                     source_id: entity_field
                                     source:
                                       derivable_context: field:node:article:field_tags
@@ -214,8 +247,8 @@ third_party_settings:
                           third_party_settings:
                             styles:
                               selected: {}
-                              extra: ''
-                        - node_id: ap00000000000008
+                              extra: p-2
+                        - node_id: ap0000000000000a
                           source_id: entity_field
                           source:
                             derivable_context: field:node:article:field_media_image
@@ -235,8 +268,11 @@ third_party_settings:
                                   node_id: ''
                                   _weight: '0'
                                   third_party_settings: {}
-                          third_party_settings: {}
-                        - node_id: ap0000000000000a
+                          third_party_settings:
+                            styles:
+                              selected: {}
+                              extra: p-2
+                        - node_id: ap0000000000000c
                           source_id: component
                           source:
                             component:
@@ -245,7 +281,7 @@ third_party_settings:
                               slots:
                                 content:
                                   sources:
-                                  - node_id: ap00000000000009
+                                  - node_id: ap0000000000000b
                                     source_id: entity_field
                                     source:
                                       derivable_context: field:node:article:field_body
@@ -275,7 +311,7 @@ third_party_settings:
                     extra: p-10
             col_second:
               sources:
-              - node_id: ap0000000000000c
+              - node_id: ap0000000000000e
                 source_id: textfield
                 source:
                   value: More featured articles
@@ -284,7 +320,7 @@ third_party_settings:
                     selected:
                       typography_font_size: text-2xl
                     extra: p-4
-              - node_id: ap0000000000000d
+              - node_id: ap0000000000000f
                 source_id: block
                 source:
                   plugin_id: views_block:articles_aside-block_1

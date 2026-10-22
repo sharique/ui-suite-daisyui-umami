@@ -11,6 +11,33 @@ conditions:
     pages: <front>
 profile: default
 sources:
+- node_id: topbar0000000001
+  source_id: component
+  source:
+    component:
+      component_id: ui_suite_daisyui:navbar
+      slots:
+        start:
+          sources:
+          - node_id: langswitch0000001
+            source_id: block
+            source:
+              plugin_id: language_block:language_interface
+            third_party_settings: {}
+        center:
+          sources: []
+        end:
+          sources:
+          - node_id: 80fe7efc155c1074
+            source_id: block
+            source:
+              plugin_id: system_menu_block:account
+  third_party_settings:
+    styles:
+      selected:
+        colors_background_color: bg-base-100
+        typography_font_size: text-sm
+      extra: container mx-auto
 - node_id: 7995f9956404635d
   source_id: component
   source:
@@ -31,47 +58,23 @@ sources:
                 use_site_logo: false
                 use_site_name: true
                 use_site_slogan: false
+            third_party_settings:
+              styles:
+                selected:
+                  typography_font_size: text-2xl
+                extra: ''
         center:
+          sources: []
+        end:
           sources:
           - node_id: c35006c46e541351
             source_id: block
             source:
               plugin_id: system_menu_block:main
-        end:
-          sources:
-          - node_id: langswitch0000001
-            source_id: block
-            source:
-              plugin_id: language_block:language_interface
-            third_party_settings: {}
-          - node_id: 80fe7efc155c1074
-            source_id: block
-            source:
-              plugin_id: system_menu_block:account
   third_party_settings:
     styles:
       selected: {}
       extra: container mx-auto
-- node_id: c4060a7f895c3891
-  source_id: block
-  source:
-    plugin_id: system_messages_block
-    system_messages_block: {}
-  third_party_settings: {}
-- node_id: d2c28b615efabe88
-  source_id: block
-  source:
-    plugin_id: local_tasks_block
-    local_tasks_block:
-      primary: true
-      secondary: true
-  third_party_settings: {}
-- node_id: e14f5523e648b3ea
-  source_id: block
-  source:
-    plugin_id: local_actions_block
-    local_actions_block: {}
-  third_party_settings: {}
 - node_id: db5ee5a7adf23220
   source_id: block
   source:
@@ -80,6 +83,35 @@ sources:
     styles:
       selected: {}
       extra: ''
+- node_id: c4060a7f895c3891
+  source_id: block
+  source:
+    plugin_id: system_messages_block
+    system_messages_block: {}
+  third_party_settings:
+    styles:
+      selected: {}
+      extra: container mx-auto
+- node_id: d2c28b615efabe88
+  source_id: block
+  source:
+    plugin_id: local_tasks_block
+    local_tasks_block:
+      primary: true
+      secondary: true
+  third_party_settings:
+    styles:
+      selected: {}
+      extra: container mx-auto
+- node_id: e14f5523e648b3ea
+  source_id: block
+  source:
+    plugin_id: local_actions_block
+    local_actions_block: {}
+  third_party_settings:
+    styles:
+      selected: {}
+      extra: container mx-auto
 - node_id: 77a7811503567e54
   source_id: component
   source:
@@ -160,10 +192,47 @@ sources:
       slots:
         col_first:
           sources:
-          - node_id: 8fee48bd6d929eba
-            source_id: block
+          - node_id: promotedcols000001
+            source_id: component
             source:
-              plugin_id: views_block:promoted_items-block_1
+              component:
+                component_id: ui_suite_daisyui:grid_2_regions
+                props:
+                  container_type:
+                    source_id: select
+                    source:
+                      value: container mx-auto
+                  col_span:
+                    source_id: selects
+                    source:
+                      value:
+                      - 12
+                      - 12
+                  col_span_lg:
+                    source_id: selects
+                    source:
+                      value:
+                      - 6
+                      - 6
+                  gap:
+                    source_id: select
+                    source:
+                      value: '4'
+                slots:
+                  col_first:
+                    sources:
+                    - node_id: promotedblock000001
+                      source_id: block
+                      source:
+                        plugin_id: views_block:promoted_items-block_1
+                      third_party_settings: {}
+                  col_second:
+                    sources:
+                    - node_id: promotedblock000002
+                      source_id: block
+                      source:
+                        plugin_id: views_block:promoted_items-block_2
+                      third_party_settings: {}
             third_party_settings:
               styles:
                 selected: {}
@@ -345,6 +414,15 @@ sources:
       slots:
         col_first:
           sources:
+          - node_id: collectionsheading1
+            source_id: textfield
+            source:
+              value: Recipe collections
+            third_party_settings:
+              styles:
+                selected:
+                  typography_font_size: text-2xl
+                extra: p-4
           - node_id: c5c132e860fd5f24a
             source_id: block
             source:
@@ -610,6 +688,6 @@ sources:
   third_party_settings:
     styles:
       selected:
-        colors_background_color: bg-neutral
-        colors_text_color: text-neutral-content
+        colors_background_color: bg-base-100
+        colors_text_color: text-base-content
       extra: ''

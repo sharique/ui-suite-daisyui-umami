@@ -261,7 +261,7 @@ third_party_settings:
       third_party_settings:
         styles:
           selected: {}
-          extra: container mx-auto
+          extra: bg-breakout
 id: block_content.banner_block.default
 targetEntityType: block_content
 bundle: banner_block

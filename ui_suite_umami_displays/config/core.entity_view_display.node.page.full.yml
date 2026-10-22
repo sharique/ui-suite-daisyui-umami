@@ -37,7 +37,7 @@ third_party_settings:
   display_builder:
     profile: default
     sources:
-    - node_id: ap00000000000011
+    - node_id: ap00000000000014
       source_id: component
       source:
         component:
@@ -50,7 +50,31 @@ third_party_settings:
           slots:
             col_first:
               sources:
-              - node_id: ap00000000000010
+              - node_id: ap00000000000011
+                source_id: entity_field
+                source:
+                  derivable_context: field:node:page:title
+                  field:node:page:title:
+                    value:
+                      sources:
+                      - source_id: field_formatter:node:page:title
+                        source:
+                          type: string
+                          label: hidden
+                          settings:
+                            link_to_entity: false
+                          third_party_settings: {}
+                          weight: 0
+                          region: content
+                        node_id: ''
+                        _weight: '0'
+                        third_party_settings: {}
+                third_party_settings:
+                  styles:
+                    selected:
+                      typography_font_size: text-3xl
+                    extra: p-2
+              - node_id: ap00000000000013
                 source_id: component
                 source:
                   component:
@@ -59,7 +83,7 @@ third_party_settings:
                     slots:
                       content:
                         sources:
-                        - node_id: ap0000000000000f
+                        - node_id: ap00000000000012
                           source_id: entity_field
                           source:
                             derivable_context: field:node:page:field_body

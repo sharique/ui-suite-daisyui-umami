@@ -19,6 +19,51 @@ recipes:
   - ui_suite_umami_displays
   - ui_suite_umami_content
 config:
+  # Module and theme default config entities are not installed by a recipe, so
+  # the admin experience (gin blocks, content/people/media listings and bulk
+  # actions) is imported explicitly, as core's standard recipe does. Existing
+  # config is left alone.
+  strict: false
+  import:
+    gin:
+      - block.block.gin_breadcrumbs
+      - block.block.gin_content
+      - block.block.gin_help
+      - block.block.gin_local_actions
+      - block.block.gin_messages
+      - block.block.gin_page_title
+      - block.block.gin_primary_local_tasks
+      - block.block.gin_secondary_local_tasks
+    node:
+      - system.action.node_delete_action
+      - system.action.node_make_sticky_action
+      - system.action.node_make_unsticky_action
+      - system.action.node_promote_action
+      - system.action.node_publish_action
+      - system.action.node_save_action
+      - system.action.node_unpromote_action
+      - system.action.node_unpublish_action
+      - views.view.content
+    user:
+      - system.action.user_block_user_action
+      - system.action.user_cancel_user_action
+      - system.action.user_unblock_user_action
+      - views.view.user_admin_people
+    media:
+      - system.action.media_delete_action
+      - system.action.media_publish_action
+      - system.action.media_save_action
+      - system.action.media_unpublish_action
+      - views.view.media
+    taxonomy:
+      - system.action.taxonomy_term_publish_action
+      - system.action.taxonomy_term_unpublish_action
+    file:
+      - views.view.files
+    block_content:
+      - views.view.block_content
+    content_moderation:
+      - views.view.moderated_content
   actions:
     system.theme:
       simpleConfigUpdate:
@@ -47,9 +92,9 @@ config:
               color-accent-content:
                 ":root": "#ffffff"
               color-neutral:
-                ":root": "#464646"
+                ":root": "#767775"
               color-neutral-content:
-                ":root": "#fbf5ee"
+                ":root": "#ffffff"
               color-base-100:
                 ":root": "#ffffff"
               color-base-200:
